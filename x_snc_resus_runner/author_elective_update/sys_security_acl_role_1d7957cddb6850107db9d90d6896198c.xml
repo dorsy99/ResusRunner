@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-01 22:05:01</sys_created_on>
+        <sys_id>1d7957cddb6850107db9d90d6896198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_resus_runner_resuscitation.x_snc_resus_runner.resuscitation_user</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_security_acl display_value="x_snc_resus_runner_resuscitation">5d7957cddb6850107db9d90d68961989</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1d7957cddb6850107db9d90d6896198c</sys_update_name>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:05:01</sys_updated_on>
+        <sys_user_role display_value="x_snc_resus_runner.resuscitation_user" name="x_snc_resus_runner.resuscitation_user">8d7957cddb6850107db9d90d68961945</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sys_security_acl_role_1d7957cddb6850107db9d90d6896198c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-01 22:05:01</sys_created_on><sys_id>1d7957cddb6850107db9d90d6896198c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_resus_runner_resuscitation.x_snc_resus_runner.resuscitation_user</sys_name><sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package><sys_policy/><sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope><sys_security_acl display_value="x_snc_resus_runner_resuscitation">5d7957cddb6850107db9d90d68961989</sys_security_acl><sys_update_name>sys_security_acl_role_1d7957cddb6850107db9d90d6896198c</sys_update_name><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-01 22:05:01</sys_updated_on><sys_user_role display_value="x_snc_resus_runner.resuscitation_user" name="x_snc_resus_runner.resuscitation_user">8d7957cddb6850107db9d90d68961945</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1113873707</payload_hash>
+        <record_name>x_snc_resus_runner_resuscitation.x_snc_resus_runner.resuscitation_user</record_name>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-01 22:05:01</sys_created_on>
+        <sys_id>157957cddb6850107db9d90d6896198f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>171d2457ca60000001</sys_recorded_at>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:52:24</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>5d7957cd186850102b275d6ba9b2e88e</update_guid>
+        <update_guid_history>5d7957cd186850102b275d6ba9b2e88e:1113873707</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_resus_runner_resuscitation.x_snc_resus_runner.resuscitation_user">d26cd741dba850107db9d90d689619ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-01 22:17:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>a49b7cdcc3ab4d94bc92de6a136b3701</sys_id>
+        <sys_metadata>1d7957cddb6850107db9d90d6896198c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_resus_runner_resuscitation.x_snc_resus_runner.resuscitation_user</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent display_value="">5d7957cddb6850107db9d90d68961989</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_1d7957cddb6850107db9d90d6896198c</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_1d7957cddb6850107db9d90d6896198c">157957cddb6850107db9d90d6896198f</sys_update_version>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:17:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

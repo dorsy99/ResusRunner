@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="action" table="x_snc_resus_runner_shock" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shock</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_shock</name>
+            <sequence>0</sequence>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 07:03:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6aa41919dbac50107db9d90d689619a2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 07:06:04</sys_updated_on>
+            <value>shock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dump</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_shock</name>
+            <sequence>1</sequence>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 07:03:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aea41919dbac50107db9d90d689619a3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 07:06:06</sys_updated_on>
+            <value>dump</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>action</element>
+            <name>x_snc_resus_runner_shock</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 07:03:19</sys_created_on>
+            <sys_id>e2a41919dbac50107db9d90d689619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>action</sys_name>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_choice_x_snc_resus_runner_shock_action</sys_update_name>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 07:03:19</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

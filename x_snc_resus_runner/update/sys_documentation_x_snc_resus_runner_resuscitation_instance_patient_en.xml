@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="patient" label="Patient" language="en" table="x_snc_resus_runner_resuscitation_instance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>patient</element>
+            <help/>
+            <hint/>
+            <label>Patient</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_resuscitation_instance</name>
+            <plural>Patients</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-01 22:24:50</sys_created_on>
+            <sys_id>e3fd5f81dba850107db9d90d68961958</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Patient</sys_name>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_resus_runner_resuscitation_instance_patient_en</sys_update_name>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:24:50</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

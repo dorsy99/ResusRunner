@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_resus_runner.PDFGen</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>PDFGen</name>
+        <script><![CDATA[var PDFGen = Class.create();
+PDFGen.prototype = {
+	initialize: function() {
+
+		// 		         _________
+		//              {_________}
+		//               )=======(
+		//              /         \
+		//             | _________ |
+		//             ||   _     ||
+		//             ||  |_)    ||
+		//             ||  | \/   ||
+		//       __    ||    /\   ||
+		//  __  (_|)   |'---------'|
+		// (_|)        `-.........-'
+
+
+		// .     |___________________________________
+		// |-----|- - -|''''|''''|''''|''''|''''|'##\|__
+		// |- -  |  cc 6    5    4    3    2    1 ### __]==----------------------
+		// |-----|________________________________##/|
+		// '     |"""""""""""""""""""""""""""""""""""`
+
+		this.pdf_page_break_lines = 40;
+	},
+
+	
+	outputEventsToPDF: function(instanceRec){
+		
+		var eventHeader = this.makeEventHeader(instanceRec);
+		var eventBody = this.makeEventBody(instanceRec);
+
+		var tableName = instanceRec.getTableName();
+		var recID = instanceRec.getUniqueValue();
+		
+		try{
+			this.savePDF(tableName,recID,eventHeader,eventBody);
+			return true;
+		}catch(e){
+			gs.error('outputEventsToPDF:'+e);
+			return false;
+		}
+		
+	},
+	
+
+	savePDF: function(destinationTableName, destinationTableSysId, eventReportHeader, eventReportBody){
+		
+		var pdf = new global.GeneralPdfUtils();
+
+		var attachmentSysId = gs.getProperty('x_snc_resus_runner.pdf.template_id');
+
+
+		var bodyArr = eventReportBody.split('\n');
+		var firstArr = bodyArr.slice(0, this.pdf_page_break_lines);
+		var secondArr = bodyArr.slice(this.pdf_page_break_lines, bodyArr.length - 1);
+
+		var firstStr = firstArr.join('\n');
+		var secondStr = secondArr.join('\n');
+
+		var jsonObject = {
+			"instance_details": eventReportHeader,
+			"events": firstStr,
+			"events2": secondStr
+		};
+
+		var jsonString = JSON.stringify(jsonObject);
+
+		var filenameDate = this.makeFilename();
+		var pdfName = 'resus_report_'+filenameDate+'.pdf';
+
+		var pdfID = pdf.prefillPdf(jsonString, destinationTableSysId, attachmentSysId, destinationTableName, pdfName);
+
+		return pdfID;
+		
+	},
+
+	makeEventHeader: function(instanceRec){
+		
+		var headerStr = '';
+
+		headerStr += instanceRec.number + ' - ' + instanceRec.patient.getDisplayValue() + '\n';
+		headerStr += 'Start:' + instanceRec.start_time.getDisplayValue() + ' - End:'+ instanceRec.end_time.getDisplayValue() + '\n';
+		headerStr += 'Airway Doctor:' + instanceRec.airway_doctor.getDisplayValue() + '\n';
+		headerStr += 'Airway Nurse:' + instanceRec.airway_nurse.getDisplayValue() + '\n';
+		headerStr += 'Procedures Nurse:' + instanceRec.procedures_nurse.getDisplayValue() + '\n';
+		headerStr += 'Scribe:' + instanceRec.scribe.getDisplayValue() + '\n';
+		headerStr += 'Drug Nurse:' + instanceRec.drug_nurse.getDisplayValue() + '\n';
+		headerStr += 'Medical TL:' + instanceRec.medical_tl.getDisplayValue() + '\n';
+		headerStr += 'Nurse TL:' + instanceRec.nurse_tl.getDisplayValue() + '\n';
+		headerStr += 'Assisting Doctors:' + instanceRec.assisting_doctors.getDisplayValue() + '\n';
+		headerStr += 'Assisting Nurses:' + instanceRec.assisting_nurses.getDisplayValue() + '\n';
+	
+		return headerStr;
+		
+	},
+	
+	makeEventBody: function(instanceRec){
+
+		var bodyStr = '';	
+		var instanceID = instanceRec.getUniqueValue();
+
+
+		var event = new GlideRecord('x_snc_resus_runner_event');
+		event.addQuery('resuscitation', instanceID);
+		event.orderBy('time');
+		event.query();
+		var i = 0;
+		while (event.next()) {
+			i++;
+
+			var eventID = event.getUniqueValue();
+			var eventType = event.sys_class_name.toString();
+
+			var detailedEvent = new GlideRecord(eventType);
+			var gotDetailed = detailedEvent.get(eventID);
+
+			var timeLocal = event.time.getDisplayValue();
+			//var timeGMT = event.time.getValue();
+			var cycleNumber = event.cycle_number.getDisplayValue();
+			var cycleTime = event.cycle_time.getDisplayValue();
+			var totalTime = event.total_time.getDisplayValue();
+
+			bodyStr += '['+ i + '] -- '+ timeLocal + ' -- '+ totalTime + '\n';
+			bodyStr += 'Cycle: '+ cycleNumber + ' -- Cycle Time: '+ cycleTime + '\n';
+
+			switch (eventType) {
+				case "x_snc_resus_runner_rhythm_check":
+					bodyStr += 'Rhythm: '+ detailedEvent.rhythm + '\n';
+					break;
+
+				case "x_snc_resus_runner_shock":
+					bodyStr += 'Action: '+ detailedEvent.action.getDisplayValue() + '\n';
+					break;
+
+				case "x_snc_resus_runner_notes":
+					bodyStr += 'Note: '+ detailedEvent.notes + '\n';
+					break;
+
+				case "x_snc_resus_runner_drug_administered":
+					bodyStr += 'Dose: '+ detailedEvent.dose + ' ' +  detailedEvent.drug_given + '\n';
+					bodyStr += 'Ordered: '+ detailedEvent.ordered_by.getDisplayValue() + '\n';
+					bodyStr += 'Administered: '+ detailedEvent.administered_by.getDisplayValue() + '\n';
+					bodyStr += 'Checked: '+ detailedEvent.checked_by.getDisplayValue() + '\n';
+					break;
+
+				case "x_snc_resus_runner_milestone":
+					bodyStr += 'Milestone: '+ detailedEvent.type.getDisplayValue() + '\n';
+					break;
+
+				default:
+					gs.addErrorMessage('No case found for eventType:'+eventType);
+					gs.error('No case found for eventType:'+eventType);
+					break;
+
+			}
+
+			bodyStr += '\n';
+
+		}
+
+		return bodyStr;
+
+	},
+
+
+
+	makeFilename: function(){
+
+		var gdt = new GlideDateTime();
+
+		var dispYear = gdt.getYearUTC().toString();
+		var dispMonth = gdt.getMonthUTC().toString();
+		var dispDay = gdt.getDayOfMonthUTC().toString();
+		var randomnumber = Math.floor(Math.random() * 1000);
+		var randomnum = randomnumber.toString();
+		var fileName = dispYear + dispMonth + dispDay + '_' + randomnum;
+
+		return fileName;
+
+
+	},
+
+
+	type: 'PDFGen'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jarod</sys_created_by>
+        <sys_created_on>2020-05-03 20:44:46</sys_created_on>
+        <sys_id>ca46ddfd1b689010400ca9bd2a4bcb81</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>PDFGen</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_script_include_ca46ddfd1b689010400ca9bd2a4bcb81</sys_update_name>
+        <sys_updated_by>jarod</sys_updated_by>
+        <sys_updated_on>2020-05-03 23:52:20</sys_updated_on>
+    </sys_script_include>
+</record_update>

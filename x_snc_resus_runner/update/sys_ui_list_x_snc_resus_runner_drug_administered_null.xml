@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_resus_runner_drug_administered" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>administered_by</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>5b412745dba850107db9d90d68961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>checked_by</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>db412745dba850107db9d90d68961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cycle_number</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>5f412745dba850107db9d90d68961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cycle_time</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>df412745dba850107db9d90d68961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dose</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>53412745dba850107db9d90d68961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>drug_given</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>d3412745dba850107db9d90d68961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ordered_by</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>57412745dba850107db9d90d68961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>resuscitation</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>d7412745dba850107db9d90d68961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>time</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>5b412745dba850107db9d90d68961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>total_time</element>
+            <list_id display_value="x_snc_resus_runner_drug_administered" element="NULL" name="x_snc_resus_runner_drug_administered" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4341e345dba850107db9d90d6896199e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_id>db412745dba850107db9d90d68961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_resus_runner_drug_administered</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-01 22:39:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4341e345dba850107db9d90d6896199e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_resus_runner_drug_administered</sys_name>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_resus_runner_drug_administered_null</sys_update_name>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:39:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

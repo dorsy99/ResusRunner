@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">5554ab941b130010400ca9bd2a4bcbb0</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-01 22:19:43</sys_created_on>
+        <sys_id>60dcdf41dba850107db9d90d6896190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:19:43</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

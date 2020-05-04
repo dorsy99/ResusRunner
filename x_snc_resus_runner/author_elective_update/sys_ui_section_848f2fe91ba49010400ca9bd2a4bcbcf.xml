@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Timestamp Details" section_id="848f2fe91ba49010400ca9bd2a4bcbcf" sys_domain="global" table="x_snc_resus_runner_rhythm_check" version="3" view="Edit">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cycle_number</element>
+            <position>0</position>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:18</sys_created_on>
+            <sys_id>048f2fe91ba49010400ca9bd2a4bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cycle_time</element>
+            <position>1</position>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:18</sys_created_on>
+            <sys_id>888f2fe91ba49010400ca9bd2a4bcbf8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:18</sys_created_on>
+            <sys_id>008f2fe91ba49010400ca9bd2a4bcbf9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time</element>
+            <position>3</position>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:18</sys_created_on>
+            <sys_id>848f2fe91ba49010400ca9bd2a4bcbf9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_time</element>
+            <position>4</position>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:18</sys_created_on>
+            <sys_id>0c8f2fe91ba49010400ca9bd2a4bcbf9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Timestamp Details</caption>
+            <header>false</header>
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>848f2fe91ba49010400ca9bd2a4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Timestamp Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_section_848f2fe91ba49010400ca9bd2a4bcbcf</sys_update_name>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Edit" name="Edit">f77f2fe91ba49010400ca9bd2a4bcbc9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sys_ui_section_848f2fe91ba49010400ca9bd2a4bcbcf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Timestamp Details" section_id="848f2fe91ba49010400ca9bd2a4bcbcf" sys_domain="global" table="x_snc_resus_runner_rhythm_check" version="3" view="Edit"><sys_ui_element action="INSERT_OR_UPDATE"><element>cycle_number</element><position>0</position><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-03 12:58:18</sys_created_on><sys_id>048f2fe91ba49010400ca9bd2a4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-03 12:58:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cycle_time</element><position>1</position><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-03 12:58:18</sys_created_on><sys_id>888f2fe91ba49010400ca9bd2a4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-03 12:58:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-03 12:58:18</sys_created_on><sys_id>008f2fe91ba49010400ca9bd2a4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-03 12:58:18</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>time</element><position>3</position><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-03 12:58:18</sys_created_on><sys_id>848f2fe91ba49010400ca9bd2a4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-03 12:58:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>total_time</element><position>4</position><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-03 12:58:18</sys_created_on><sys_id>0c8f2fe91ba49010400ca9bd2a4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Timestamp Details" display_value="Timestamp Details" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">848f2fe91ba49010400ca9bd2a4bcbcf</sys_ui_section><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-03 12:58:18</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Timestamp Details</caption><header>false</header><name>x_snc_resus_runner_rhythm_check</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-03 12:58:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>848f2fe91ba49010400ca9bd2a4bcbcf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Timestamp Details</sys_name><sys_overrides/><sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package><sys_policy/><sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope><sys_update_name>sys_ui_section_848f2fe91ba49010400ca9bd2a4bcbcf</sys_update_name><sys_updated_by>kevin</sys_updated_by><sys_updated_on>2020-05-03 12:58:17</sys_updated_on><sys_user/><title>false</title><view display_value="Edit" name="Edit">f77f2fe91ba49010400ca9bd2a4bcbc9</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>546458950</payload_hash>
+        <record_name>Rhythm Check</record_name>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 12:58:18</sys_created_on>
+        <sys_id>488f2fe91ba49010400ca9bd2a4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171da9daa630000001</sys_recorded_at>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:58:18</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>c08f2fe92fa490100c6777a27cae17fb</update_guid>
+        <update_guid_history>c08f2fe92fa490100c6777a27cae17fb:546458950</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 13:00:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>b38a4c7d80ca4b508582ae3b143feed9</sys_id>
+        <sys_metadata>848f2fe91ba49010400ca9bd2a4bcbcf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Timestamp Details</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent display_value="Rhythm Check">b42f57c1dba850107db9d90d68961954</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sys_ui_section_848f2fe91ba49010400ca9bd2a4bcbcf</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_848f2fe91ba49010400ca9bd2a4bcbcf">488f2fe91ba49010400ca9bd2a4bcbfb</sys_update_version>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 13:00:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

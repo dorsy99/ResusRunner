@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Event" max_length="40" name="x_snc_resus_runner_event" sizeclass="462" type="collection">
+        <element label="Cycle Number" max_length="40" name="cycle_number" type="integer"/>
+        <element label="Cycle Time" max_length="40" name="cycle_time" type="glide_duration"/>
+        <element label="Order" max_length="100" name="order" type="string"/>
+        <element display="true" label="Resuscitation" max_length="32" name="resuscitation" read_only="true" reference="x_snc_resus_runner_resuscitation_instance" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Time" max_length="40" name="time" type="glide_date_time"/>
+        <element label="Total Time" max_length="40" name="total_time" type="glide_duration"/>
+        <index name="index">
+            <element name="resuscitation"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

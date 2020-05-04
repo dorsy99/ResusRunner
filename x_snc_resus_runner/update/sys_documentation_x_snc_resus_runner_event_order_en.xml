@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="order" label="Order" language="en" table="x_snc_resus_runner_event">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <help/>
+            <hint/>
+            <label>Order</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_event</name>
+            <plural>Orders</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>chris</sys_created_by>
+            <sys_created_on>2020-05-04 00:49:21</sys_created_on>
+            <sys_id>00421a791b2c9010400ca9bd2a4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Order</sys_name>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_resus_runner_event_order_en</sys_update_name>
+            <sys_updated_by>chris</sys_updated_by>
+            <sys_updated_on>2020-05-04 00:49:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

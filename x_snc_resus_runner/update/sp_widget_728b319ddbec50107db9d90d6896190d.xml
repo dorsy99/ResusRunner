@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($rootScope,$scope) {
+  /* widget controller */
+	
+	var c = this;
+	
+	// Jargon Buster Field Substitutions:
+	// for each Label in this Widget requiring update, create Javascript object (e.g. jargonObj)
+	// under this "jargon" data object, add key/value pairs for three values - technical, Layperson and current. 
+	// Set the current object to equal the Technical string as a default so the text is set at load
+	// and use the curent object in the HTML using {{c.data.jargon.<label>.current}}
+	
+	var jargonObj = {};
+
+	jargonObj.meal = {};
+	jargonObj.meal.technical = "Fish";
+	jargonObj.meal.layperson = "Chips";
+	jargonObj.meal.current = jargonObj.meal.technical;
+
+	jargonObj.monster ={}
+	jargonObj.monster.technical = "Dr Jeckyll";
+	jargonObj.monster.layperson = "Mr Hyde";
+	jargonObj.monster.current = jargonObj.monster.technical;
+
+	// ... replace or add new objects for labels to replace following the example above
+	
+	c.data.jargon = jargonObj; 
+	var jargonArray = c.data.jargon; 
+	
+	// Receive the emitted Data object 
+	$rootScope.$on('setJargonState', function(event, data) {	
+		c.data.altText = "changed the alt text";
+		setCurrentLabel(data);
+	});	
+	
+	// Label-setting Function - will switch between the *.technical (false) and *.layperson (true) values based on the emitted data object
+
+	function setCurrentLabel(trueFalse) {
+		var jargonName;
+		var jargonType;
+		
+		for (jargonName in jargonArray) {
+			jargonType = jargonArray[jargonName];
+			(trueFalse == true) ? jargonType.current = jargonType.layperson : jargonType.current = jargonType.technical;		
+		}
+	}	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description>This Is a sample Widget for testing the Jargon Switcher Emitter</description>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>rpp_sample_jargon</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Sample Jargon Switcher</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-02 10:02:09</sys_created_on>
+        <sys_id>728b319ddbec50107db9d90d6896190d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Sample Jargon Switcher</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_728b319ddbec50107db9d90d6896190d</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-02 14:00:45</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default"> 
+  <div class="panel-body"> 
+    <div class="content half"> 
+  <h4> This is an example Widget for demonstrating the "Jargon Switcher" widget functionality</h4	>
+ 
+      <p>
+        The Jargon switcher allows an admin to define an object in the client script of a given widget containing any "Jargon"
+ which might need to be translated from <i><strong>technical language</strong></i> to <i><strong>layperson's terms</strong></i>. Once the objects are defined, then the Jargon Switcher widget will be able to switch between these two "modes" across the entire page wherever Jargon has been defined.</p>
+      <p> Here are some sample Text values which can be translated using the Layperson Mode switch:</p>
+      <p> Today I feel like <strong>{{ c.data.jargon.monster.current }}</strong></p>
+      <p> Tonight I will eat <strong>{{ c.data.jargon.meal.current }}</strong></p>
+      <h4> Below are the Data Objects used:</h4	>
+      <p>Contents of "c.data.jargon":</p>
+  
+      <pre>{{ c.data.jargon | json}}</pre>
+    </div>    
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

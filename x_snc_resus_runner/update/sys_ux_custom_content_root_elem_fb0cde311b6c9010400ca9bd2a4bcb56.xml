@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_custom_content_root_elem">
+    <sys_ux_custom_content_root_elem action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applicability>single</applicability>
+        <applicable_page display_value="Resus Runner">9f0c9e311b6c9010400ca9bd2a4bcbb8</applicable_page>
+        <attrs/>
+        <children/>
+        <component display_value="sn-workspace-toolbar-button">c599f5f3b6554fd79cd983bf4ea75968</component>
+        <is_root>true</is_root>
+        <layout/>
+        <macroponent/>
+        <macroponent_config/>
+        <name>Inbox Button</name>
+        <order>200</order>
+        <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
+        <parent/>
+        <parent_slot/>
+        <picker/>
+        <picker_condition/>
+        <placeholder display_value="Workspace Toolbar Buttons">1232bfb5730c330075e8f358caf6a7ca</placeholder>
+        <sys_class_name>sys_ux_custom_content_root_elem</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-04 01:32:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb0cde311b6c9010400ca9bd2a4bcb56</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Inbox Button</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_ux_custom_content_root_elem_fb0cde311b6c9010400ca9bd2a4bcb56</sys_update_name>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:32:12</sys_updated_on>
+        <tree_root/>
+    </sys_ux_custom_content_root_elem>
+    <sys_variable_value action="delete_multiple" query="document_key=fb0cde311b6c9010400ca9bd2a4bcb56"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>fb0cde311b6c9010400ca9bd2a4bcb56</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-04 01:32:13</sys_created_on>
+        <sys_id>7b0cde311b6c9010400ca9bd2a4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:32:13</sys_updated_on>
+        <value>Inbox</value>
+        <variable display_value="">b5b65fd20c3c13fbd299dce1ef797184</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>fb0cde311b6c9010400ca9bd2a4bcb56</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-04 01:32:12</sys_created_on>
+        <sys_id>b70cde311b6c9010400ca9bd2a4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:32:12</sys_updated_on>
+        <value>inbox-outline</value>
+        <variable display_value="">674bdc908b8ed17eb631bec92971a228</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_ux_custom_content_root_elem</document>
+        <document_key>fb0cde311b6c9010400ca9bd2a4bcb56</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-04 01:32:12</sys_created_on>
+        <sys_id>f30cde311b6c9010400ca9bd2a4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:32:12</sys_updated_on>
+        <value>inbox</value>
+        <variable display_value="">f497a95e69778d0f72f3f0d2df450266</variable>
+    </sys_variable_value>
+</record_update>

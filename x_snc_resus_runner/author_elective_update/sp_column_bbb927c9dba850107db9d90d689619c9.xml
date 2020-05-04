@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="3">f7b927c9dba850107db9d90d6896194b</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-01 23:16:11</sys_created_on>
+        <sys_id>bbb927c9dba850107db9d90d689619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_column_bbb927c9dba850107db9d90d689619c9</sys_update_name>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-01 23:16:11</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sp_column_bbb927c9dba850107db9d90d689619c9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="3">f7b927c9dba850107db9d90d6896194b</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>andrew</sys_created_by><sys_created_on>2020-05-01 23:16:11</sys_created_on><sys_id>bbb927c9dba850107db9d90d689619c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package><sys_policy/><sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope><sys_update_name>sp_column_bbb927c9dba850107db9d90d689619c9</sys_update_name><sys_updated_by>andrew</sys_updated_by><sys_updated_on>2020-05-01 23:16:11</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-2127583223</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-01 23:16:11</sys_created_on>
+        <sys_id>33b927c9dba850107db9d90d689619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171d286a51e0000001</sys_recorded_at>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-01 23:16:11</sys_updated_on>
+        <type>Column</type>
+        <update_guid>7bb927c98aa85010e7596386c716e8ca</update_guid>
+        <update_guid_history>7bb927c98aa85010e7596386c716e8ca:-2127583223</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">0a1b0ee51be09010400ca9bd2a4bcba4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 05:39:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>23ffeb45e06f4e2491b6e8aacaf42104</sys_id>
+        <sys_metadata>bbb927c9dba850107db9d90d689619c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sp_column_bbb927c9dba850107db9d90d689619c9</sys_update_name>
+        <sys_update_version display_value="sp_column_bbb927c9dba850107db9d90d689619c9">33b927c9dba850107db9d90d689619cb</sys_update_version>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 05:39:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

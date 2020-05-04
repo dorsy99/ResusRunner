@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Launch - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="rrp_launch">8813e34d1b645010400ca9bd2a4bcbaa</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-01 22:47:52</sys_created_on>
+        <sys_id>0d43274d1b645010400ca9bd2a4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Launch - Container 1</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_container_0d43274d1b645010400ca9bd2a4bcbed</sys_update_name>
+        <sys_updated_by>david</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:47:52</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

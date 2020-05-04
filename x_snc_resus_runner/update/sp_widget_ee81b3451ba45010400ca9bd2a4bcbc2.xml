@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	c.data.warnings = c.data.warnings || "";
+	//c.data.warnings = c.data.warnings.replace(/\n/g, "<br />\n");
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel-heading {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.box{
+  padding: 20px 0;
+  background-color: $danger;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff
+}
+
+.standard{
+	height: 159px;
+}
+
+@media only screen and (max-width: 600px) {
+  .standard { 
+    height: 100%;
+  }
+}
+
+.warnings {
+  padding: 3px;
+  color: white;
+  /* word-wrap: break-word; */
+  /* white-space: pre-wrap; */
+  /* font-weight: bold; */
+}
+
+.warnings-good {
+  background-color: green;
+}
+
+.warnings-bad {
+	background-color: red;
+}
+
+h4{
+	margin-top: 0px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>patient_stats</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Patient Stats</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table');
+	*/
+	var sys_id = $sp.getParameter("sys_id")
+	var resus = new GlideRecord(CONST.RESUS);
+	if(resus.get(sys_id)){
+		var patient = new GlideRecord(CONST.PATIENT);
+		patient.addQuery("sys_id", resus.getValue("patient"))
+		patient.query();
+		if(patient.next()){
+			data.name = patient.getDisplayValue("name");
+			data.dob = patient.getDisplayValue("dob");
+			data.alergies = patient.getDisplayValue("allergies");
+			data.covid = true; //Need to add checkbox to patient table for covid
+			data.diagnosis = patient.getValue("diagnosis");
+			data.warnings = patient.getValue("warnings");
+		}
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>chris</sys_created_by>
+        <sys_created_on>2020-05-01 23:50:15</sys_created_on>
+        <sys_id>ee81b3451ba45010400ca9bd2a4bcbc2</sys_id>
+        <sys_mod_count>93</sys_mod_count>
+        <sys_name>Patient Stats</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_ee81b3451ba45010400ca9bd2a4bcbc2</sys_update_name>
+        <sys_updated_by>david</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:12:31</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default p-2">
+  <div class="panel-heading">
+    <h2 class="panel-title">Patient</h2>
+  </div>
+  <div class="panel-body standard">
+    <div class="col-xs-4">
+      <div class="col-xs-12">
+        <h4>Details</h4>
+      </div>
+      <div class="col-xs-4">
+          NAME:
+      </div>
+      <div class="col-xs-8">
+          {{::c.data.name}}
+      </div>
+      <div class="col-xs-4">
+          DOB:
+      </div>
+      <div class="col-xs-8">
+          {{::c.data.dob}}
+      </div>
+      <div class="col-xs-4">
+          ALERGIES:
+      </div>
+      <div class="col-xs-8">
+          {{::c.data.alergies}}
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="col-xs-12">
+      	<h4>Presenting Complaint</h4>
+      </div>
+      <div class="col-xs-12">
+        {{::c.data.diagnosis}}
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <h4>Patient warnings</h4>
+      <div class="warnings warnings-bad" ng-if="data.warnings!=''">
+        {{data.warnings}}
+      </div>
+      <div class="warnings warnings-good" ng-if="data.warnings==''">
+        No warnings for this patient
+      </div>
+    </div>
+    <!-- 
+    <div class="col-xs-4 box">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      QUERY COVID
+    </div> 
+-->
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

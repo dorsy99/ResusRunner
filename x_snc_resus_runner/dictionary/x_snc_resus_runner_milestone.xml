@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_resus_runner_event" label="Milestone" max_length="40" name="x_snc_resus_runner_milestone" type="collection">
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Begin" sequence="100" value="Begin"/>
+                <element inactive_on_update="false" label="Cycle Increment" sequence="200" value="Cycle Increment"/>
+                <element inactive_on_update="false" label="ROSC" sequence="1000" value="ROSC"/>
+                <element inactive_on_update="false" label="Deceased" sequence="1100" value="Deceased"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="rhythm" table="x_snc_resus_runner_rhythm_check" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rhythm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VF</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <sequence>0</sequence>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 06:45:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>48a09d55dbac50107db9d90d68961999</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 06:45:41</sys_updated_on>
+            <value>VF</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rhythm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VT</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <sequence>1</sequence>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 06:45:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0a01195dbac50107db9d90d68961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 06:45:41</sys_updated_on>
+            <value>VT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rhythm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PEA</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <sequence>2</sequence>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 06:45:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14a01195dbac50107db9d90d68961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 06:45:41</sys_updated_on>
+            <value>PEA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rhythm</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Asys</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <sequence>3</sequence>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 06:45:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54a01195dbac50107db9d90d68961912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 06:45:41</sys_updated_on>
+            <value>Asys</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>rhythm</element>
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 06:45:41</sys_created_on>
+            <sys_id>d0a09d55dbac50107db9d90d6896199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rhythm</sys_name>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_choice_x_snc_resus_runner_rhythm_check_rhythm</sys_update_name>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 06:45:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

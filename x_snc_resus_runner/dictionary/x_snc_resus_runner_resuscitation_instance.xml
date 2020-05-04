@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Resuscitation Instance" max_length="40" name="x_snc_resus_runner_resuscitation_instance" sizeclass="37" type="collection">
+        <element label="Airway Doctor" max_length="32" name="airway_doctor" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Airway Nurse" max_length="32" name="airway_nurse" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Assisting Doctors" max_length="4000" name="assisting_doctors" reference="x_snc_resus_runner_staff" type="glide_list"/>
+        <element label="Assisting Nurses" max_length="4000" name="assisting_nurses" reference="x_snc_resus_runner_staff" type="glide_list"/>
+        <element label="Cycle Count" max_length="40" name="cycle_count" type="integer"/>
+        <element label="Drug Nurse" max_length="32" name="drug_nurse" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
+        <element label="Medical TL" max_length="32" name="medical_tl" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Nurse TL" max_length="32" name="nurse_tl" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_snc_resus_runner_patient" type="reference"/>
+        <element label="Procedures Nurse" max_length="32" name="procedures_nurse" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Scribe" max_length="32" name="scribe" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element default="javascript:new GlideDateTime().getDisplayValue()" label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+        <element label="Total Length" max_length="40" name="total_length" type="glide_duration"/>
+    </element>
+</database>

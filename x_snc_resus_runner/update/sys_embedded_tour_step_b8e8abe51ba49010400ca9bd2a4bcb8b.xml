@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="INSERT_OR_UPDATE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">30e8abe51ba49010400ca9bd2a4bcb8a</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[<b>Return of spontaneous circulation (ROSC)</b> indicates that the patient has resumed circulation and treatment can move into post-resuscitation care.]]></content>
+        <guide display_value="Resuscitation Tour">af7a356d1ba09010400ca9bd2a4bcbf6</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/rrp?id=resus_event"}</options>
+        <order>10</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 12:29:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8e8abe51ba49010400ca9bd2a4bcb8b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_b8e8abe51ba49010400ca9bd2a4bcb8b</sys_update_name>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:39:56</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">30e8abe51ba49010400ca9bd2a4bcb8a</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>rrp</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="delete_multiple" query="documentkey=b8e8abe51ba49010400ca9bd2a4bcb8b"/>
+</record_update>

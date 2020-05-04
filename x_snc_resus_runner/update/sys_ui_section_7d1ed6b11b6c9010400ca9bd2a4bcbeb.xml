@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Event Details" section_id="7d1ed6b11b6c9010400ca9bd2a4bcbeb" sys_domain="global" table="x_snc_resus_runner_resuscitation_instance" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_time</element>
+            <position>0</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:41:06</sys_created_on>
+            <sys_id>821e1ab11b6c9010400ca9bd2a4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Details" display_value="Event Details" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">7d1ed6b11b6c9010400ca9bd2a4bcbeb</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:41:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cycle_count</element>
+            <position>1</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:41:06</sys_created_on>
+            <sys_id>0a1e1ab11b6c9010400ca9bd2a4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Details" display_value="Event Details" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">7d1ed6b11b6c9010400ca9bd2a4bcbeb</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:41:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:41:06</sys_created_on>
+            <sys_id>8e1e1ab11b6c9010400ca9bd2a4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Details" display_value="Event Details" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">7d1ed6b11b6c9010400ca9bd2a4bcbeb</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:41:06</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_time</element>
+            <position>3</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:41:06</sys_created_on>
+            <sys_id>061e1ab11b6c9010400ca9bd2a4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Event Details" display_value="Event Details" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">7d1ed6b11b6c9010400ca9bd2a4bcbeb</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:41:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Event Details</caption>
+            <header>false</header>
+            <name>x_snc_resus_runner_resuscitation_instance</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:41:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d1ed6b11b6c9010400ca9bd2a4bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Event Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_section_7d1ed6b11b6c9010400ca9bd2a4bcbeb</sys_update_name>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:41:06</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">025be3d81bd30010400ca9bd2a4bcb7d</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

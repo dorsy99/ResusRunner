@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="sys_import_set_row" label="Drug Names" max_length="40" name="x_snc_resus_runner_import_drug_names_01" sizeclass="111522" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=active_ingredients" label="active_ingredients" max_length="75" name="u_active_ingredients" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=application_number" label="application_number" max_length="40" name="u_application_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=brand_name" label="brand_name" max_length="40" name="u_brand_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=brand_name_base" label="brand_name_base" max_length="40" name="u_brand_name_base" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=dea_schedule" label="dea_schedule" max_length="40" name="u_dea_schedule" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=dosage_form" label="dosage_form" max_length="40" name="u_dosage_form" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=finished" label="finished" max_length="40" name="u_finished" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=generic_name" label="generic_name" max_length="40" name="u_generic_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=labeler_name" label="labeler_name" max_length="40" name="u_labeler_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=listing_expiration_date" label="listing_expiration_date" max_length="40" name="u_listing_expiration_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=marketing_category" label="marketing_category" max_length="40" name="u_marketing_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=marketing_start_date" label="marketing_start_date" max_length="40" name="u_marketing_start_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda" label="openfda" max_length="445" name="u_openfda" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/is_original_packager" label="openfda/is_original_packager" max_length="40" name="u_openfda_is_original_packager" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/manufacturer_name" label="openfda/manufacturer_name" max_length="44" name="u_openfda_manufacturer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/nui" label="openfda/nui" max_length="45" name="u_openfda_nui" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/pharm_class_epc" label="openfda/pharm_class_epc" max_length="40" name="u_openfda_pharm_class_epc" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/pharm_class_pe" label="openfda/pharm_class_pe" max_length="108" name="u_openfda_pharm_class_pe" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/rxcui" label="openfda/rxcui" max_length="140" name="u_openfda_rxcui" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/spl_set_id" label="openfda/spl_set_id" max_length="40" name="u_openfda_spl_set_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/unii" label="openfda/unii" max_length="40" name="u_openfda_unii" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=openfda/upc" label="openfda/upc" max_length="119" name="u_openfda_upc" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=packaging" label="packaging" max_length="1744" name="u_packaging" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=pharm_class" label="pharm_class" max_length="130" name="u_pharm_class" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=product_id" label="product_id" max_length="46" name="u_product_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=product_ndc" label="product_ndc" max_length="40" name="u_product_ndc" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=product_type" label="product_type" max_length="40" name="u_product_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=route" label="route" max_length="40" name="u_route" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=spl_id" label="spl_id" max_length="40" name="u_spl_id" type="string"/>
+    </element>
+</database>

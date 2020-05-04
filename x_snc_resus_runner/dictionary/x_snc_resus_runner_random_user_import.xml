@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="sys_import_set_row" label="randomuser.me" max_length="40" name="x_snc_resus_runner_random_user_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_allergies" label="Allergies" max_length="40" name="u_allergies" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_diagnosis" label="Diagnosis" max_length="100" name="u_diagnosis" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_dob" label="Dob" max_length="40" name="u_dob" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_gender" label="Gender" max_length="40" name="u_gender" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_weight" label="Weight" max_length="40" name="u_weight" type="string"/>
+    </element>
+</database>

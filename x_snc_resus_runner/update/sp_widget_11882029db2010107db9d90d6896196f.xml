@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(spUtil) {
+  /* widget controller */
+	
+  var c = this;
+	
+	
+	c.updateDrugInfo = function() {
+		var templateName = ""+c.data.drug_type;
+		if (templateName != "" && templateName != "other") {
+			c.data.template_loaded = true;
+			var template = c.data.templates[templateName];
+
+			c.data.drug_name = template.label;
+			c.data.drug_dose = template.default_dose;
+
+		} else {
+			c.data.template_loaded = false;
+			c.data.drug_name = "";
+			c.data.drug_dose = "";
+		}
+	}
+	
+	c.resetForm = function() {
+		c.data.template_loaded = c.data.drug_type != "other";
+		c.data.drug_type = "other";
+		c.data.drug_dose = "";
+		c.data.drug_name = "";
+		c.data.drug_ordered_by = {value: "", displayValue: "", name: "drug_ordered_by"};
+		c.data.drug_given_by = {
+														value: c.data.default_drug_nurse.value,
+														displayValue: c.data.default_drug_nurse.displayValue,
+														name: "drug_given_by"
+		};
+		c.data.drug_checked_by = {value: "", displayValue: "", name: "drug_checked_by"};
+		
+		c.updateDrugInfo();
+	}
+	
+	c.submit = function() {
+		if (c.data.drug_name == "" || c.data.drug_dose == "") {
+			spUtil.addErrorMessage("Can't scribe a drug administered event without the drug name and dose.")
+			return;
+		}
+		
+		var outputObj = {
+			table: c.data.table,
+			drug_given: c.data.drug_name,
+			dose: c.data.drug_dose,
+			ordered_by: c.data.drug_ordered_by.value,
+			administered_by: c.data.drug_given_by.value,
+			checked_by: c.data.drug_checked_by.value
+		}
+		$rootScope.$broadcast('writeEvent', outputObj);
+		
+		c.resetForm();
+	}
+	
+	// Run this
+	c.resetForm();
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>rrp_drug_dispensery</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Drug dispensery</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function(data, input, $sp) {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	// Set templates here
+	data.templates = {};
+	data.table = CONST.DRUG;
+	
+	data.templates.adrenaline = {
+		label : "Adrenaline",
+		value : "adrenaline",
+		default_dose : "1mg"
+	};
+	
+	data.templates.amiodarone = {
+		label : "Amiodarone",
+		value : "amiodarone",
+		default_dose : "300mg"
+	};
+	
+	// Get some details from the instance
+	var sys_id = $sp.getParameter("sys_id");
+	var gr = new GlideRecord(CONST.RESUS);
+	if (gr.get(sys_id)) {
+		data.default_drug_nurse = {
+			value: gr.drug_nurse,
+			displayValue: gr.drug_nurse.getDisplayValue()
+		};
+	} else {
+		$sp.log("WARNING: Couldn't find resus instance by the sys_id '"+sys_id+"'");
+		
+		data.default_drug_nurse = {
+			value: "",
+			displayValue: ""
+		}
+	}
+	
+	
+	
+})(data, input, $sp);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-02 22:28:56</sys_created_on>
+        <sys_id>11882029db2010107db9d90d6896196f</sys_id>
+        <sys_mod_count>124</sys_mod_count>
+        <sys_name>Drug dispensery</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_11882029db2010107db9d90d6896196f</sys_update_name>
+        <sys_updated_by>david</sys_updated_by>
+        <sys_updated_on>2020-05-03 23:50:50</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+      <h2 class="panel-title">${Drugs and meds}</h2>
+    </div>
+
+    <div class="panel-body">
+      <form class="" role="form">
+
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-xs-6">
+
+              <div class="form-group">
+                <label for="drug_type">${Drug type}</label>
+                
+                <select class="form-control" id="drug_type" name="drug_type"
+                        ng-model="data.drug_type"
+                        ng-change="c.updateDrugInfo();"
+                        >
+                  <option value="other">Other</option>
+                  <option ng-repeat="template in data.templates"
+                          value={{::template.value}}
+                          >
+                    {{::template.label}}
+                  </option>
+                </select>
+
+              </div>
+
+              <div class="form-group">
+                <label for="drug_name"><span style="color: red;">*</span>${Drug name}</label>
+                <input type="text" class="form-control"
+                       id="drug_name"
+                       ng-model="data.drug_name"
+                       ng-disabled="data.template_loaded===true"
+
+                       />
+              </div>
+
+              <div class="form-group">
+                <label for="drug_dose"><span style="color: red;">*</span>${Drug dose}</label>
+                <input type="text" class="form-control"
+                       id="drug_dose"
+                       ng-model="data.drug_dose"
+                       ng-disabled="data.template_loaded===true"
+
+                       />
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="drug_ordered_by">${Ordered by}</label>
+                <sn-record-picker
+                                  sn-disabled="data.submitting===true"
+                                  field="data.drug_ordered_by" 
+                                  table="'x_snc_resus_runner_staff'"
+                                  default-query=""
+                                  display-field="'name'" 
+                                  value-field="'sys_id'" 
+                                  search-fields="'name'" 
+                                  page-size="100" >
+                </sn-record-picker>
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="drug_given_by">${Given by}</label>
+                <sn-record-picker
+                                  sn-disabled="data.submitting===true"
+                                  field="data.drug_given_by" 
+                                  table="'x_snc_resus_runner_staff'"
+                                  default-query=""
+                                  display-field="'name'" 
+                                  value-field="'sys_id'" 
+                                  search-fields="'name'" 
+                                  page-size="100" >
+                </sn-record-picker>
+              </div>
+
+              <div class="form-group">
+                <label for="drug_checked_by">${Checked by}</label>
+                <sn-record-picker
+                                  sn-disabled="data.submitting===true"
+                                  field="data.drug_checked_by" 
+                                  table="'x_snc_resus_runner_staff'"
+                                  default-query=""
+                                  display-field="'name'" 
+                                  value-field="'sys_id'" 
+                                  search-fields="'name'" 
+                                  page-size="100" >
+                </sn-record-picker>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <button class="btn btn-primary btn-block" 
+                  ng-click="c.submit();">
+            ${Drug administered}
+          </button>
+        </div>
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function loadData(import_set_table) {
+	// Add your code here to insert data to import_set_table
+	var requestBody = {};
+	var restMessage = new sn_ws.RESTMessageV2();
+	restMessage.setHttpMethod("get");
+	restMessage.setEndpoint("https://randomuser.me/api/?results=100");
+	restMessage.setRequestBody(JSON.stringify(requestBody));
+	var response = restMessage.execute();
+	var error = response.haveError();
+	if(error){
+		var errorCode = response.getErrorCode();
+		var errorMsg = response.getErrorMessage();
+	}
+	var headerVal = response.getHeader("Content-Type");
+	var headers = response.getHeaders();
+	var queryString = response.getQueryString();
+	var statusCode = response.getStatusCode();
+	var responseBody = response.getBody();
+	var responseObj = JSON.parse(responseBody);
+//	gs.info(statusCode);
+//	gs.info(responseBody);
+	responseObj.results.forEach(function(user){
+		var map = {
+			u_name: user.name.first + ' ' + user.name.last,
+			u_dob: user.dob.date,
+			u_gender: user.gender,
+			u_weight: (function(){
+				var min = 4;
+				var max = 300;
+				return Math.floor(Math.random() * (max - min + 1) + min);
+			})(),
+			u_allergies: (function(){
+				var allergies = [
+					"Baisam of Peru",
+					"Egg",
+					"Fish",
+					"Fruit",
+					"Garlic",
+					"Hot peppers",
+					"Oats",
+					"Maize",
+					"Milk",
+					"Peanut",
+					"Poulty Meat",
+					"Red Meat",
+					"Rice",
+					"Sesame",
+					"Shellfish",
+					"Soy",
+					"Sulfites",
+					"Tartrazine",
+					"Tree nut",
+					"Wheat",
+					"Tetracycline",
+					"Dilantin",
+					"Tegretol",
+					"Penicillin",
+					"Cephalosporins",
+					"Sulfonamides",
+					"Local Anesthetics",
+					"Cat",
+					"Dog",
+					"Mold",
+					"Latex",
+					""
+				];
+				var allergy = allergies[Math.floor(Math.random()*allergies.length)];
+				return allergy;
+			})(),
+			u_diagnosis: (function(){
+				
+				var symptoms = [
+					"Shortness of breath (dyspnea) when you exert yourself or when you lie down",
+					"Fatigue and weakness",
+					"Swelling (edema) in your legs, ankles and feet",
+					"Rapid or irregular heartbeat",
+					"Reduced ability to exercise",
+					"Persistent cough or wheezing with white or pink blood-tinged phlegm",
+					"Increased need to urinate at night",
+					"Swelling of your abdomen (ascites)",
+					"Very rapid weight gain from fluid retention",
+					"Lack of appetite and nausea",
+					"Difficulty concentrating or decreased alertness",
+					"Sudden, severe shortness of breath and coughing up pink, foamy mucus",
+					"Chest pain if your heart failure is caused by a heart attack"
+				];
+				var symptom = symptoms[Math.floor(Math.random()*symptoms.length)];
+				return symptom;
+				
+			})()
+		};
+		import_set_table.insert(map);
+	});
+})(import_set_table);]]></data_loader>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Random User Import</import_set_table_label>
+        <import_set_table_name>x_snc_resus_runner_random_user_import</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time/>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>randomuser.me (staff)</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 21:57:07</sys_created_on>
+        <sys_id>05dae17d1ba89010400ca9bd2a4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>randomuser.me (staff)</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_data_source_05dae17d1ba89010400ca9bd2a4bcbb8</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 21:57:07</sys_updated_on>
+        <table_name/>
+        <type>CUSTOM</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

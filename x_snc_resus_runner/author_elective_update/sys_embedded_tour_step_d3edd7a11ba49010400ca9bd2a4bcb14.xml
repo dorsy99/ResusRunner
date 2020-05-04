@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_step">
+    <sys_embedded_tour_step action="DELETE">
+        <action>false</action>
+        <action_event>next</action_event>
+        <action_target/>
+        <action_target_ref display_value="xpath">4bedd7a11ba49010400ca9bd2a4bcb12</action_target_ref>
+        <active>true</active>
+        <content><![CDATA[General notes or observations about the resuscitation event can be captured in the <b>Add note</b> section]]></content>
+        <guide display_value="Resuscitation Tour">af7a356d1ba09010400ca9bd2a4bcbf6</guide>
+        <implicit>false</implicit>
+        <link/>
+        <name/>
+        <options>{"url":"/rrp?id=resus_event"}</options>
+        <order>6</order>
+        <placement>top</placement>
+        <skippable>false</skippable>
+        <step_type>step</step_type>
+        <sys_class_name>sys_embedded_tour_step</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 11:41:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d3edd7a11ba49010400ca9bd2a4bcb14</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_embedded_tour_step_d3edd7a11ba49010400ca9bd2a4bcb14</sys_update_name>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:20:03</sys_updated_on>
+        <target/>
+        <target_ref display_value="xpath">4bedd7a11ba49010400ca9bd2a4bcb12</target_ref>
+        <title/>
+        <ui_version>dynamic</ui_version>
+        <view/>
+        <window>rrp</window>
+    </sys_embedded_tour_step>
+    <sys_translated_text action="DELETE" query="documentkey=d3edd7a11ba49010400ca9bd2a4bcb14"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sys_embedded_tour_step_d3edd7a11ba49010400ca9bd2a4bcb14</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;4bedd7a11ba49010400ca9bd2a4bcb12&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[General notes or observations about the resuscitation event can be captured in the &lt;b&gt;Add note&lt;/b&gt; section]]&gt;&lt;/content&gt;&lt;guide display_value="Resuscitation Tour"&gt;af7a356d1ba09010400ca9bd2a4bcbf6&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/rrp?id=resus_event"}&lt;/options&gt;&lt;order&gt;6&lt;/order&gt;&lt;placement&gt;top&lt;/placement&gt;&lt;skippable&gt;false&lt;/skippable&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kevin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-05-03 11:41:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d3edd7a11ba49010400ca9bd2a4bcb14&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Resus Runner" source="x_snc_resus_runner"&gt;42f21b89db6850107db9d90d6896195a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Resus Runner"&gt;42f21b89db6850107db9d90d6896195a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_d3edd7a11ba49010400ca9bd2a4bcb14&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kevin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-03 12:20:03&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;4bedd7a11ba49010400ca9bd2a4bcb12&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;rrp&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d3edd7a11ba49010400ca9bd2a4bcb14"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1082000238</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 12:20:03</sys_created_on>
+        <sys_id>7fb6e3e51ba49010400ca9bd2a4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171da7aa7940000001</sys_recorded_at>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:20:03</sys_updated_on>
+        <type>Guided Tour Step</type>
+        <update_guid>b7b6e3e538a4901076a7860f00fc6747</update_guid>
+        <update_guid_history>b7b6e3e538a4901076a7860f00fc6747:1082000238,ba9663e5b7a49010fec19ed9b639f6db:-1661997809,5a9663e579a4901074560f90f47f9fa1:1082000238,c48623e5aea4901034014702a3f0fd6f:-1661997809,6f7623e52ba49010f7246df586dfab1e:1082000238,2956afa54fa49010a5eceac954e3f9db:-1661997809,5156afa52ca49010ad5f001a377d459e:1082000238,9a162fa575a49010cbadaa577d4336a1:-1661997809,4a162fa52ca490101a92120822b99761:1082000238,e7f5aba5dca490108a656ecc9be25da7:-1661997809,980e5ba1dba49010f900c3176324c816:-756034805,a8fd1ba152a490107f8aa2946d110b6a:-1089308214,57ed1ba125a490106ca3a8cd03111e4c:-422761396</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 12:20:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_step">sys_embedded_tour_step</sys_db_object>
+        <sys_id>2b472cc1a04a401a9114e5dd23ed1621</sys_id>
+        <sys_metadata>d3edd7a11ba49010400ca9bd2a4bcb14</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_step_d3edd7a11ba49010400ca9bd2a4bcb14</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_step_d3edd7a11ba49010400ca9bd2a4bcb14">7fb6e3e51ba49010400ca9bd2a4bcb47</sys_update_version>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:20:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

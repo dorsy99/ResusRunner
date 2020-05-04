@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Patient" max_length="40" name="x_snc_resus_runner_patient" sizeclass="1" type="collection">
+        <element label="Allergies" max_length="40" name="allergies" type="string"/>
+        <element label="Diagnosis" max_length="100" name="diagnosis" type="string"/>
+        <element label="DOB" max_length="40" name="dob" type="glide_date"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="female" sequence="0" value="female"/>
+                <element inactive_on_update="false" label="male" sequence="0" value="male"/>
+            </choice>
+        </element>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Warnings" max_length="4000" name="warnings" type="string"/>
+        <element label="Weight" max_length="40" name="weight" type="integer"/>
+        <index name="index">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_resus_runner.CONST</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CONST</name>
+        <script><![CDATA[var CONST = Class.create();
+CONST.RESUS = 'x_snc_resus_runner_resuscitation_instance';
+CONST.DRUG = 'x_snc_resus_runner_drug_administered';
+CONST.EVENT = 'x_snc_resus_runner_event';
+CONST.PATIENT = 'x_snc_resus_runner_patient';
+CONST.RHYTHM = 'x_snc_resus_runner_rhythm_check';
+CONST.SHOCK = 'x_snc_resus_runner_shock';
+CONST.STAFF = 'x_snc_resus_runner_staff';
+CONST.NOTES = 'x_snc_resus_runner_notes';
+CONST.MILESTONE = 'x_snc_resus_runner_milestone';]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-01 22:47:19</sys_created_on>
+        <sys_id>43912b45dba850107db9d90d689619a6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CONST</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_script_include_43912b45dba850107db9d90d689619a6</sys_update_name>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-03 22:48:35</sys_updated_on>
+    </sys_script_include>
+</record_update>
