@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_snc_resus_runner_event" label="Rhythm Check" max_length="40" name="x_snc_resus_runner_rhythm_check" sizeclass="216" type="collection">
+        <element choice="1" label="Rhythm" max_length="40" name="rhythm" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="VF" sequence="0" value="VF"/>
+                <element inactive_on_update="false" label="VT" sequence="1" value="VT"/>
+                <element inactive_on_update="false" label="PEA" sequence="2" value="PEA"/>
+                <element inactive_on_update="false" label="Asys" sequence="3" value="Asys"/>
+            </choice>
+        </element>
+    </element>
+</database>

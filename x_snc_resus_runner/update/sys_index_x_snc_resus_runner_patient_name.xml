@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>name</col_name_string>
+        <index_col_name element="name" name="x_snc_resus_runner_patient">c39bdb01dba850107db9d90d6896198e</index_col_name>
+        <logical_table_name>x_snc_resus_runner_patient</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2020-05-03 21:48:34</sys_created_on>
+        <sys_id>ffd8e9b1db2c10107db9d90d689619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_resus_runner_patient</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_index_x_snc_resus_runner_patient_name</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-05-03 21:48:34</sys_updated_on>
+        <table display_value="Patient" name="x_snc_resus_runner_patient">369bdb01dba850107db9d90d68961927</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

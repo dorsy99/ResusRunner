@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">bbb927c9dba850107db9d90d689619c9</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-01 23:19:54</sys_created_on>
+        <sys_id>d29aafc9dba850107db9d90d689619e4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_instance_d29aafc9dba850107db9d90d689619e4</sys_update_name>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-01 23:20:59</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"href": {
+		"value": "",
+		"displayValue": ""
+	},
+	"button_text": {
+		"value": "DRUG ADMINISTRATION",
+		"displayValue": "DRUG ADMINISTRATION"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=d29aafc9dba850107db9d90d689619e4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sp_instance_d29aafc9dba850107db9d90d689619e4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;bbb927c9dba850107db9d90d689619c9&lt;/sp_column&gt;&lt;sp_widget display_value="link-button"&gt;abc50de6d702120023c84f80de61036a&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;andrew&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-05-01 23:19:54&lt;/sys_created_on&gt;&lt;sys_id&gt;d29aafc9dba850107db9d90d689619e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Resus Runner" source="x_snc_resus_runner"&gt;42f21b89db6850107db9d90d6896195a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Resus Runner"&gt;42f21b89db6850107db9d90d6896195a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_d29aafc9dba850107db9d90d689619e4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;andrew&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-01 23:20:59&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"href": {
+		"value": "",
+		"displayValue": ""
+	},
+	"button_text": {
+		"value": "DRUG ADMINISTRATION",
+		"displayValue": "DRUG ADMINISTRATION"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d29aafc9dba850107db9d90d689619e4"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1714378299</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-01 23:20:59</sys_created_on>
+        <sys_id>0edaa30ddba850107db9d90d689619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171d28b0b330000001</sys_recorded_at>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-01 23:20:59</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>46daa30d24a85010af57e17d5d9c00d0</update_guid>
+        <update_guid_history>46daa30d24a85010af57e17d5d9c00d0:-1714378299,8dda630d89a850106635ffcc7b0dcf5d:2092191080,d29aefc9e0a85010112c8401ed842ca0:1487562556</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f80d60e11b209010400ca9bd2a4bcb2f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-02 22:48:33</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>371d3a615dd948f49c9a613066dbaeb1</sys_id>
+        <sys_metadata>d29aafc9dba850107db9d90d689619e4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sp_instance_d29aafc9dba850107db9d90d689619e4</sys_update_name>
+        <sys_update_version display_value="sp_instance_d29aafc9dba850107db9d90d689619e4">0edaa30ddba850107db9d90d689619d0</sys_update_version>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-02 22:48:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

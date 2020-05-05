@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="weight" label="Weight" language="en" table="x_snc_resus_runner_patient">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>weight</element>
+            <help/>
+            <hint/>
+            <label>Weight</label>
+            <language>en</language>
+            <name>x_snc_resus_runner_patient</name>
+            <plural>Weights</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-01 22:17:22</sys_created_on>
+            <sys_id>864c1741dba850107db9d90d689619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Weight</sys_name>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_resus_runner_patient_weight_en</sys_update_name>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-01 22:17:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(spUtil, $scope, $timeout, spModal) {
+
+	/* widget controller */
+	var c = this;
+	
+	$scope.incidata = {};
+	$scope.incidata.changed = false;
+	
+	spUtil.recordWatch($scope, c.data.table, "resuscitation=" + c.data.currentRecord, function(response) {
+		console.log(response.data); //comes back as undefined  
+		//if (response.data.action == "entry") {
+			c.server.update();
+		//}
+	});
+	
+	c.onWidget = function(sysid, table){
+		console.log("SYSID: " + sysid + "\nTABLE: " + table);
+		spModal.open({
+			value: c.response,
+			title: "Edit Entry",
+			widget: "widget-form",
+			buttons: [
+                {label:'', hide: true},
+                {label:'', hide: true}
+			],
+			widgetInput: {
+				table: table,
+				sys_id: sysid,
+				view: "Edit"
+				
+			}
+		}).then(function(){
+			c.server.update();
+		})
+	}
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.scrollable {
+  overflow-y: scroll;
+  height: 523px;
+	margin-bottom: 0px;
+}
+.timeline {
+  list-style: none;
+  padding: 20px 10px 0px 10px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline &gt; li {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.timeline &gt; li:before,
+.timeline &gt; li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline &gt; li:after {
+  clear: both;
+}
+
+.timeline &gt; li:before,
+.timeline &gt; li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline &gt; li:after {
+  clear: both;
+}
+
+.timeline &gt; li &gt; .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  background-color: white;
+}
+
+.timeline &gt; li &gt; .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline &gt; li &gt; .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline &gt; li &gt; .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.timeline &gt; li.timeline-inverted &gt; .timeline-panel {
+  float: right;
+}
+
+.timeline &gt; li.timeline-inverted &gt; .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline &gt; li.timeline-inverted &gt; .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-badge.primary {
+  background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+  background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+  background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+  background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-shortdesc {
+ text-size: +1; 
+}
+
+.timeline-body &gt; p,
+.timeline-body &gt; ul {
+  margin-bottom: 0;
+}
+
+.timeline-body &gt; p + p {
+  margin-top: 5px;
+}
+
+li .active {
+  background-color: #eeeeee;
+}
+
+.day {
+  float: left;
+  margin: 0px 1px 0px 1px; 
+  width: 7.3px; 
+  max-width: 7.3px; 
+  min-width: 7.3px; 
+  height: 30px; 
+  border-radius: 3px; 
+}
+
+.multiple-issues {
+  position: relative;
+  top: -5px;
+}
+
+.nav &gt; li {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-tabs &gt; li &gt; a {
+  	color: #555555;
+    margin-right: 2px;
+    line-height: 1.42857;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+ 
+.nav-tabs &gt; li.active &gt; a {
+    color: #555555;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+.tab-pane {
+  padding-top: 10px;
+}
+
+.label {
+  border-radius: 1em;
+  font-weight: normal;
+  font-size: 90%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>timeline</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Timeline</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.events = []
+	var position;
+	data.currentRecord =	$sp.getParameter("sys_id");
+	data.table = CONST.EVENT
+
+	/*
+	var getDetails = function(sysid, table) {
+		var grEv = new GlideRecord(table);
+		grEv.get(sysid);
+
+		var out = {};
+
+		if (table == CONST.RHYTHM) {
+			out.rhythm = grEv.getValue("rhythm");
+		}
+
+		if (table == CONST.NOTES) {
+			out.note = grEv.getValue("notes");
+		}
+
+		if (table == CONST.SHOCK) {
+			out.shock_action = grEv.getValue("action");
+		}
+
+		if (table == CONST.DRUG) {
+			out.drug_given = grEv.getValue("drug_given");
+			out.dose = grEv.getValue("dose");
+			out.ordered_by = grEv.getDisplayValue("ordered_by");
+			out.checked_by = grEv.getValue("checked_by");
+			out.administered_by = grEv.getValue("administered_by");
+		}
+
+		return out;
+	}
+	*/
+
+	var grEvent = new GlideRecord(CONST.EVENT);
+	//grEvent.addQuery("resuscitation",data.currentRecord);
+	grEvent.addEncodedQuery("resuscitation.sys_idSTARTSWITH" + data.currentRecord);
+	grEvent.orderByDesc("sys_created_on");
+	//grEvent.orderByDesc("order");
+	grEvent.query();
+
+	$sp.log("Your butt"); // <--- Amazing
+	var rowCount = grEvent.getRowCount();
+	while (grEvent.next()) {
+		var count = rowCount;
+		rowCount = rowCount - 1;
+		var event = {};
+		event.type = grEvent.getDisplayValue("sys_class_name");
+		event.className = grEvent.getRecordClassName();
+		event.sys_id = grEvent.getUniqueValue();
+		
+
+		//event.cycle_time = grEvent.getDisplayValue("cycle_time");
+		event.cycle_time = grEvent.getValue("cycle_time").split(" ")[1];
+		
+		
+		event.cycle_number = grEvent.cycle_number + '' || "unknown";
+		//$sp.log(event.cycle_count);
+		event.time = grEvent.getDisplayValue("time");
+		
+		event.total_time = grEvent.getValue("total_time").split(" ")[1];
+		
+		var grEv = new GlideRecord(event.className);
+		grEv.get(event.sys_id);
+		//$sp.log(grEv.getDisplayValue("time"));
+		if (event.className == CONST.RHYTHM) {
+			event.rhythm = grEv.getValue("rhythm");
+		}
+
+		if (event.className == CONST.NOTES) {
+			event.note = grEv.getValue("notes");
+		}
+
+		if (event.className == CONST.SHOCK) {
+			event.shock_action = grEv.getValue("action");
+		}
+		
+		if (event.className == CONST.MILESTONE) {
+			event.milestone = grEv.getValue("type");
+		}
+
+		if (event.className == CONST.DRUG) {
+			event.drug_given = grEv.getValue("drug_given");
+			event.dose = grEv.getValue("dose");
+			event.ordered_by = grEv.getDisplayValue("ordered_by");
+			event.checked_by = grEv.getDisplayValue("checked_by");
+			event.administered_by = grEv.getDisplayValue("administered_by");
+		}
+		
+		event.liClass = "timeline-inverted";
+
+		switch(event.type) {
+			case "Shock":
+				if (event.shock_action == "shock") {
+					event.title = "Shock Administered";
+				} else {
+					event.title = "Shock Dumped";
+				}
+				
+				break;
+			case "Notes":
+				event.title = event.note;
+				break;
+			case "Drug Administered":
+				event.title = event.drug_given + " " + event.dose + " Administered";
+				break;
+			case "Rhythm Check":
+				event.title = "Rhythm: " + event.rhythm;
+				break;
+			case "Milestone":
+				event.title = event.milestone;
+				event.liClass = "";
+				break;
+			default:
+				// code block
+		}
+
+		//$sp.log(getDetails(event.sys_id,event.className));
+
+		//out.short_description = curOutage.getValue("short_description");
+
+		/*	if (count % 2 == 0) {
+			event.liClass = "timeline-inverted";
+		} else {
+			event.liClass = "";
+		} */
+		data.events.push(event);
+	}
+
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-01 23:39:27</sys_created_on>
+        <sys_id>a01f6f8ddba850107db9d90d6896190c</sys_id>
+        <sys_mod_count>152</sys_mod_count>
+        <sys_name>Timeline</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_a01f6f8ddba850107db9d90d6896190c</sys_update_name>
+        <sys_updated_by>chris</sys_updated_by>
+        <sys_updated_on>2020-05-04 03:14:11</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title"> Timeline</h2>
+  </div>
+  <div class="panel-body">
+  <ul class="timeline well scrollable">
+    <li ng-repeat="event in data.events" class="{{event.liClass}}">
+
+      <!-- BADGES FOR TYPES -->
+
+      <div ng-if="event.type == 'Shock'" class="timeline-badge warning">
+        <i class="fa fa-bolt"></i>
+      </div>
+      <div ng-if="event.type == 'Notes'" class="timeline-badge success">
+        <i class="fa fa-commenting"></i>
+      </div>
+      <div ng-if="event.type == 'Drug Administered'" class="timeline-badge info">
+        <i class="fa fa-medkit"></i>
+      </div>
+      <div ng-if="event.type == 'Rhythm Check'" class="timeline-badge danger">
+        <i class="fa fa-heartbeat"></i>
+      </div>
+      <div ng-if="event.type == 'Milestone'" class="timeline-badge info">
+        <i class="fa fa-clock-o"></i>
+      </div>
+      <!-- >END BADGES</-->
+
+      <div class="timeline-panel">
+        <!-- Heading -->
+        <div class="timeline-heading">
+          <h3 class="timeline-title">{{event.title}}</h3>
+          <!-- <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Event: {{event.total_time}} - Actual: {{event.time}}</small></p> -->
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>&nbsp;Cycle {{event.cycle_number}} - {{event.cycle_time}} | Total Time: {{event.total_time}}<br />
+            Current Time: {{event.time}}</small></p>
+        </div>
+        
+        <!-- Body stuff -->
+        <div>
+          <!-- <span ng-if="event.rhythm" style="font-size: x-large">Rhythm: {{event.rhythm}}<br /></span> -->
+          <!-- <span ng-if="event.note" style="font-size: larger">{{event.note}}<br /></span> -->
+          
+          <span ng-if="event.drug_given">
+	          <!-- <span style="font-size: x-large"><strong>{{event.drug_given}}</strong> {{event.dose}}</span><br />-->
+            <span ng-if="event.ordered_by">Ordered by: {{event.ordered_by}}</span><br />
+            <span ng-if="event.checked_by">Chceked by: {{event.checked_by}}</span><br />
+            <span ng-if="event.administered_by">Administered by: {{event.administered_by}}</span>
+          </span>
+        <button 
+                ng-click='c.onWidget(event.sys_id, event.className)' class="btn btn-danger button-sm pull-right" >
+          Edit
+        </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

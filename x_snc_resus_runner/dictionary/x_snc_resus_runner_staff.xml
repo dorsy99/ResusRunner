@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Staff" max_length="40" name="x_snc_resus_runner_staff" sizeclass="4" type="collection">
+        <element choice="1" dependent="type" dependent_on_field="type" label="Grade" max_length="40" name="grade" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Nurse" inactive_on_update="false" label="AIN" sequence="0" value="AIN"/>
+                <element dependent_value="Nurse" inactive_on_update="false" label="EN" sequence="1" value="EN"/>
+                <element dependent_value="Nurse" inactive_on_update="false" label="RN" sequence="2" value="RN"/>
+                <element dependent_value="Nurse" inactive_on_update="false" label="CN" sequence="3" value="CN"/>
+                <element dependent_value="Nurse" inactive_on_update="false" label="CNC" sequence="4" value="CNC"/>
+                <element dependent_value="Nurse" inactive_on_update="false" label="NP" sequence="5" value="NP"/>
+            </choice>
+        </element>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Doctor" sequence="10" value="Doctor"/>
+                <element inactive_on_update="false" label="Nurse" sequence="20" value="Nurse"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(spUtil, $rootScope, $scope, $interval) {
+  /* widget controller */
+  var c = this;
+	c.startDate = new Date().getTime();
+	c.cycleStartDate = new Date().getTime();
+	c.data.countInt = 0;
+	$rootScope.$broadcast('writeAlert', generateContent("Check Defib attached to patient", "success"));
+	
+	$rootScope.$on('writeEvent', function(event,data) {
+		console.log('Listener caught writeEvent: ', data);
+		c.data.eventData = data;
+		if(data.table == c.data.shockClass){
+			if(data.action == "shock"){
+				c.data.shock++;
+				if(c.data.shock == 3){
+					$rootScope.$broadcast('writeAlert', generateContent("AMI", "success"));
+				}	else if(c.data.shock%2 == 0){
+					$rootScope.$broadcast('writeAlert', generateContent("ADRENALINE", "success"));
+				} else if(c.data.currRhythm == "VF"){
+					$rootScope.$broadcast('writeAlert', generateContent("Continue compressions", "info"));
+				}
+				if(c.data.countInt >= 120 && c.data.currRhythm == "VF"){
+					 c.restartCycle();
+				}
+				if(c.data.countInt >= 120 && c.data.currRhythm == "VT"){
+					 c.restartCycle();
+				}
+			}
+			else {
+				if(c.data.countInt >= 120 && c.data.currRhythm != "VF")
+					$rootScope.$broadcast('writeAlert', generateContent("Continue compressions", "info"));
+				c.restartCycle();
+			}
+			
+		}
+		
+		if(data.table == c.data.adrenClass){
+			if(c.data.shock%2 == 0 || c.data.shock == 3)
+				$rootScope.$broadcast('writeAlert', generateContent("Continue compressions", "info"));
+			if(data.drug_given == "Adrenaline")
+				c.data.adren++;
+		}
+		
+		if(data.table == c.data.rhythmClass){
+			c.data.currRhythm = data.rhythm;
+			if(c.data.countInt >= 120){
+				if(c.data.currRhythm == "VF")
+					$rootScope.$broadcast('writeAlert', generateContent("SHOCK", "danger"));
+				else if(c.data.currRhythm == "VT")
+					$rootScope.$broadcast('writeAlert', generateContent("CHECK FOR PULSE", "success"));
+				else {
+					$rootScope.$broadcast('writeAlert', generateContent("DUMP / NEW CYCLE", "warning"));
+				}
+			}
+		}
+		c.data.event++;
+		c.server.update();
+  });
+	
+	
+	$interval(function() {
+		if(c.data.run){
+			var now = new Date().getTime();
+			c.data.countInt = Math.floor((now-c.cycleStartDate)/1000);
+			console.log("countint: " + c.data.countInt + " now: " + now + " c.cycleStartDate: " + c.cycleStartDate);
+			if(c.data.countInt == 110)
+				$rootScope.$broadcast('writeAlert', generateContent("CHARGE DEFIB", "success"));
+			if(c.data.countInt == 120)
+				$rootScope.$broadcast('writeAlert', generateContent("CHECK RHYTHM", "success"));
+			if(c.data.countInt <= 120)
+				updateProgressBar();
+			c.updateCurrCycle(now);
+			c.updateTotalTime(now);
+		}
+	}, 1000);
+	
+	c.updateCurrCycle = function(now){
+		var diff = now-c.cycleStartDate;
+		c.data.currCycle = generateTime(diff);
+	};
+	
+	c.updateTotalTime = function(now){
+		var diff = now-c.startDate;
+		c.data.totalTime = generateTime(diff);
+	};
+	
+	function generateTime(diff){
+		var minutes = formatValue(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)));
+		var seconds = formatValue(Math.floor((diff % (1000 * 60)) / 1000));
+		return minutes + ":" + seconds;
+	}
+	
+	// make sure the value formats to 2 digits
+	function formatValue(value){
+		if(value < 10)
+			value = "0" + value;
+		return value;
+	}
+	
+	function updateProgressBar(){
+		var elem = document.getElementById("progressBar");  
+		var percentage = parseInt(c.data.countInt/120*100);
+		console.log(percentage + " countint: " + c.data.countInt);
+		jQuery('#progressBar').css({"width": percentage + '%'});
+		if(percentage>0)
+			jQuery('#progressBar').text('.');
+		
+	}
+	
+	c.restartCycle = function(){
+		c.data.newCycle = true;
+		//c.data.countInt = 0;
+		c.cycleStartDate = new Date().getTime();
+		//c.data.currCycle = "00:00";
+		//c.data.currRhythm = "";
+		//c.data.cycleCount++;
+		jQuery('#progressBar').text();
+	}
+	
+	function generateContent(message, color){
+		var content = {
+			"content": "<strong>" + message  + "</strong>",
+			"classes": "alert alert-" + color
+		}
+		return content;
+	}
+	 
+}
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.content {
+  margin-bottom: 10px;
+}
+
+.bar {
+	background-color: $danger;
+  border-radius: 4px;
+  height: 20px;
+  color: $danger;
+}
+
+.panel-heading {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.larger {
+	font-size: 18px;
+}
+
+.largest {
+	font-size: 24px;
+}
+
+H4 {
+	margin-top: 0px
+}
+
+.standard{
+	height: 159px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>cycle_stats</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Cycle Stats</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	if(input){
+		
+		var gr = new GlideRecord(input.eventData.table);
+		gr.initialize();
+		gr.setValue("resuscitation", input.sys_id);
+		if(input.eventData.table == CONST.MILESTONE){
+			gr.setValue("type", input.eventData.type);
+			if(input.eventData.type == "Deceased" || input.eventData.type == "ROSC"){
+				data.run = false;
+				input.run = false;
+			}
+		}
+		if(input.eventData.table == CONST.NOTES){
+			gr.setValue("notes", input.eventData.notes);
+		}
+		if(input.eventData.table == CONST.RHYTHM){
+			gr.setValue("rhythm", input.eventData.rhythm);
+		}
+		if(input.eventData.table == CONST.SHOCK){
+			gr.setValue("action", input.eventData.action);
+		}
+		if(input.eventData.table == CONST.DRUG){
+			gr.setValue("drug_given", input.eventData.drug_given);
+			gr.setValue("dose", input.eventData.dose);
+			gr.setValue("ordered_by", input.eventData.ordered_by);
+			gr.setValue("administered_by", input.eventData.administered_by);
+			gr.setValue("checked_by", input.eventData.checked_by);
+		}
+		gr.setValue("cycle_time", "1970-01-01 00:" + input.currCycle);
+		gr.setValue("total_time", "1970-01-01 00:" + input.totalTime);
+		gr.setValue("cycle_number", input.cycleCount);
+		gr.setValue("time", new GlideDateTime());
+		gr.setValue("order", input.event);
+		gr.insert();
+		//input.event++;
+		$sp.log(input.event);
+		
+		if(input.newCycle){
+			input.countInt = 0;
+			data.countInt = 0;
+			input.currCycle = "00:00";
+			data.currCycle = "00:00";
+			input.currRhythm = "";
+			data.currRhythm = "";
+			input.cycleCount++;
+			data.cycleCount = input.cycleCount;
+			var cycle = new GlideRecord(input.mileClass);
+			cycle.initialize();
+			cycle.setValue("resuscitation", input.sys_id);
+			cycle.setValue("type", "Cycle Increment");
+			cycle.setValue("cycle_time", "1970-01-01 00:" + input.currCycle);
+			cycle.setValue("total_time", "1970-01-01 00:" + input.totalTime);
+			cycle.setValue("cycle_number", input.cycleCount);
+			cycle.setValue("time", new GlideDateTime());
+			var foo = parseInt(input.event+1);
+			input.event = foo;
+			data.event = foo;
+			cycle.setValue("order", input.event);
+			cycle.insert();
+			
+			input.newCycle = false;
+			data.newCycle = false;
+			$sp.log(input.event);
+		}
+	}
+	else {
+		data.sys_id = $sp.getParameter("sys_id");
+		data.shock = 0;
+		data.adren = 0;
+		data.event = 0;
+		data.totalTime = "00:00";
+		data.currCycle = "00:00";
+		data.cycleCount = 1;
+		data.shockClass = CONST.SHOCK;
+		data.adrenClass = CONST.DRUG;
+		data.rhythmClass = CONST.RHYTHM;
+		data.mileClass = CONST.MILESTONE;
+		data.currRhythm = "";
+		data.newCycle = false;
+		data.run = true;
+		var event = new GlideRecord(CONST.EVENT);
+		event.setLimit(1);
+		event.addQuery("resuscitation", data.sys_id);
+		event.query();
+		if(!event.hasNext()){
+			var start = new GlideRecord(data.mileClass);
+			start.initialize();
+			start.setValue("resuscitation", data.sys_id);
+			start.setValue("type", "Begin");
+			start.setValue("cycle_time", "1970-01-01 00:" + data.currCycle);
+			start.setValue("total_time", "1970-01-01 00:" + data.totalTime);
+			start.setValue("cycle_number", data.cycleCount);
+			start.setValue("time", new GlideDateTime());
+			start.setValue("order", data.event);
+			start.insert();
+			data.event++;
+			$sp.log(data.event);
+		}
+		
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>chris</sys_created_by>
+        <sys_created_on>2020-05-02 01:24:30</sys_created_on>
+        <sys_id>271700911be45010400ca9bd2a4bcbad</sys_id>
+        <sys_mod_count>219</sys_mod_count>
+        <sys_name>Cycle Stats</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_271700911be45010400ca9bd2a4bcbad</sys_update_name>
+        <sys_updated_by>chris</sys_updated_by>
+        <sys_updated_on>2020-05-04 02:01:52</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default p-2">
+  <div class="panel-heading">
+    <h2 class="panel-title">Cycle Timer</h2>
+  </div>
+  <div class="panel-body standard">
+    <div class="col-xs-4 content">
+      	<!--<div class="col-xs-12">
+          <h4><strong>Counts</strong></h4>
+      	</div>-->
+      	<div class="col-xs-6">
+          Cycle
+        </div>
+      	<div class="col-xs-6">
+          {{c.data.cycleCount}}
+      	</div>
+        <div class="col-xs-6">
+          Shock
+        </div>
+      	<div class="col-xs-6">
+          {{c.data.shock}}
+      	</div>
+      	<div class="col-xs-6">
+          Adren
+        </div>
+      	<div class="col-xs-6">
+          {{c.data.adren}}
+      	</div>    
+    </div>
+    <div class="col-xs-8 content">
+      	<!--<div class="col-xs-12">
+          <h4><strong>Timers</strong></h4>
+      	</div>-->
+      	<div class="col-xs-8 largest">
+          CYCLE TIME
+        </div>
+      	<div class="col-xs-4 largest">
+          {{c.data.currCycle}}
+      	</div>  
+      	<div class="col-xs-8 larger">
+          TOTAL TIME
+        </div>
+      	<div class="col-xs-4 larger">
+          {{c.data.totalTime}}
+      	</div>
+        
+    </div>
+    <!--<div class="col-xs-6 content">
+      TOTAL TIME: {{c.data.totalTime}}
+    </div>
+    <div class="col-xs-12 content">
+      <div>
+        CURRENT CYCLE: {{c.data.currCycle}}
+      </div>
+      <div>
+        CYCLE COUNT: {{c.data.cycleCount}}
+      </div>
+    </div>-->
+    <div class="col-xs-12">
+    	<div class="content bar" id="progressBar">
+      	
+    	</div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

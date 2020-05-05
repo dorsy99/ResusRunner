@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_module">
+    <sys_aw_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <content display_value="Home Module Content">670cde311b6c9010400ca9bd2a4bcb13</content>
+        <content_attrs/>
+        <content_component display_value="now-uxf-viewport">3f75ec64a40f9432c9168bbda7b997de</content_component>
+        <content_tag/>
+        <detail/>
+        <detail_attrs/>
+        <detail_component/>
+        <detail_tag/>
+        <hide_until_ready>false</hide_until_ready>
+        <icon>home-outline</icon>
+        <id>home</id>
+        <label>Home</label>
+        <order>0</order>
+        <roles/>
+        <sys_class_name>sys_aw_module</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-04 01:32:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b0c9e311b6c9010400ca9bd2a4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>home</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_props/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_aw_module_1b0c9e311b6c9010400ca9bd2a4bcbeb</sys_update_name>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:32:11</sys_updated_on>
+        <toolbar_button display_value="Home Button">930c9e311b6c9010400ca9bd2a4bcbec</toolbar_button>
+        <type>full</type>
+        <workspace_config display_value="Resus Runner">970c9e311b6c9010400ca9bd2a4bcbb8</workspace_config>
+    </sys_aw_module>
+    <sys_variable_value action="delete_multiple" query="document_key=1b0c9e311b6c9010400ca9bd2a4bcbeb"/>
+</record_update>

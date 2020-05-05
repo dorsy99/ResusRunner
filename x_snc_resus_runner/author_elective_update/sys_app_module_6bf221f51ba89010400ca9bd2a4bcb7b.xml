@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>random_patients</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_resus_runner_random_patients</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 21:22:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6bf221f51ba89010400ca9bd2a4bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>random_patients</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_app_module_6bf221f51ba89010400ca9bd2a4bcb7b</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 21:22:53</sys_updated_on>
+        <timeline_page/>
+        <title>random_patients</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sys_app_module_6bf221f51ba89010400ca9bd2a4bcb7b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>random_patients</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_resus_runner_random_patients</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>jacebenson</sys_created_by><sys_created_on>2020-05-03 21:22:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6bf221f51ba89010400ca9bd2a4bcb7b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>random_patients</sys_name><sys_overrides/><sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package><sys_policy/><sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope><sys_update_name>sys_app_module_6bf221f51ba89010400ca9bd2a4bcb7b</sys_update_name><sys_updated_by>jacebenson</sys_updated_by><sys_updated_on>2020-05-03 21:22:53</sys_updated_on><timeline_page/><title>random_patients</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>218621797</payload_hash>
+        <record_name>random_patients</record_name>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 21:22:53</sys_created_on>
+        <sys_id>e7f221f51ba89010400ca9bd2a4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171dc6ba2f90000001</sys_recorded_at>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 21:22:53</sys_updated_on>
+        <type>Module</type>
+        <update_guid>23f221f5bfa890103263a9f3284ff67e</update_guid>
+        <update_guid_history>23f221f5bfa890103263a9f3284ff67e:218621797</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="random_patients">bc386db91ba89010400ca9bd2a4bcbb1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 21:45:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>30ae717e031c45009c5d5f99f39cce90</sys_id>
+        <sys_metadata>6bf221f51ba89010400ca9bd2a4bcb7b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>random_patients</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sys_app_module_6bf221f51ba89010400ca9bd2a4bcb7b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_6bf221f51ba89010400ca9bd2a4bcb7b">e7f221f51ba89010400ca9bd2a4bcb7e</sys_update_version>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 21:45:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

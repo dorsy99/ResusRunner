@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="0c8f2fe91ba49010400ca9bd2a4bcbd0" sys_domain="global" table="x_snc_resus_runner_rhythm_check" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>008f2fe91ba49010400ca9bd2a4bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_resus_runner_rhythm_check" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">0c8f2fe91ba49010400ca9bd2a4bcbd0</sys_ui_form>
+            <sys_ui_section caption="Recorded Cardiac Rhythm" display_value="Recorded Cardiac Rhythm" name="x_snc_resus_runner_rhythm_check" sys_domain="global" view="f77f2fe91ba49010400ca9bd2a4bcbc9">088f2fe91ba49010400ca9bd2a4bcbcd</sys_ui_section>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_resus_runner_rhythm_check</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>kevin</sys_created_by>
+            <sys_created_on>2020-05-03 12:58:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c8f2fe91ba49010400ca9bd2a4bcbd0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_resus_runner_rhythm_check</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_0c8f2fe91ba49010400ca9bd2a4bcbd0</sys_update_name>
+            <sys_updated_by>kevin</sys_updated_by>
+            <sys_updated_on>2020-05-03 12:58:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Edit" name="Edit">f77f2fe91ba49010400ca9bd2a4bcbc9</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

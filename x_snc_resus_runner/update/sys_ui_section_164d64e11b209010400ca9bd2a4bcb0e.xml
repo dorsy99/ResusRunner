@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="164d64e11b209010400ca9bd2a4bcb0e" sys_domain="global" table="x_snc_resus_runner_import_drug_names_01" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>524d64e11b209010400ca9bd2a4bcb15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_product_type</element>
+            <position>1</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>5e4d64e11b209010400ca9bd2a4bcb15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_dea_schedule</element>
+            <position>2</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>d24d64e11b209010400ca9bd2a4bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_listing_expiration_date</element>
+            <position>3</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>5a4d64e11b209010400ca9bd2a4bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_manufacturer_name</element>
+            <position>4</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>de4d64e11b209010400ca9bd2a4bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>d24d64e11b209010400ca9bd2a4bcb30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_spl_set_id</element>
+            <position>6</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>5a4d64e11b209010400ca9bd2a4bcb30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_product_id</element>
+            <position>7</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>de4d64e11b209010400ca9bd2a4bcb30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_brand_name</element>
+            <position>8</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>564d64e11b209010400ca9bd2a4bcb31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_generic_name</element>
+            <position>9</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>da4d64e11b209010400ca9bd2a4bcb31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>624d64e11b209010400ca9bd2a4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda</element>
+            <position>11</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e64d64e11b209010400ca9bd2a4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_pharm_class_pe</element>
+            <position>12</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6e4d64e11b209010400ca9bd2a4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_packaging</element>
+            <position>13</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e24d64e11b209010400ca9bd2a4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>14</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6a4d64e11b209010400ca9bd2a4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_route</element>
+            <position>15</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>ee4d64e11b209010400ca9bd2a4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_active_ingredients</element>
+            <position>16</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>664d64e11b209010400ca9bd2a4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_dosage_form</element>
+            <position>17</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>ea4d64e11b209010400ca9bd2a4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_marketing_category</element>
+            <position>18</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>624d64e11b209010400ca9bd2a4bcb35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_nui</element>
+            <position>19</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e64d64e11b209010400ca9bd2a4bcb35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>20</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6e4d64e11b209010400ca9bd2a4bcb35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_unii</element>
+            <position>21</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e24d64e11b209010400ca9bd2a4bcb36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_product_ndc</element>
+            <position>22</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6a4d64e11b209010400ca9bd2a4bcb36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_brand_name_base</element>
+            <position>23</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>ee4d64e11b209010400ca9bd2a4bcb36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_labeler_name</element>
+            <position>24</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>664d64e11b209010400ca9bd2a4bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_is_original_packager</element>
+            <position>25</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>ea4d64e11b209010400ca9bd2a4bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>26</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>624d64e11b209010400ca9bd2a4bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_rxcui</element>
+            <position>27</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e64d64e11b209010400ca9bd2a4bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_pharm_class</element>
+            <position>28</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6e4d64e11b209010400ca9bd2a4bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>29</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e24d64e11b209010400ca9bd2a4bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_spl_id</element>
+            <position>30</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6a4d64e11b209010400ca9bd2a4bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_application_number</element>
+            <position>31</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>ee4d64e11b209010400ca9bd2a4bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_finished</element>
+            <position>32</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>664d64e11b209010400ca9bd2a4bcb3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>33</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>ea4d64e11b209010400ca9bd2a4bcb3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_marketing_start_date</element>
+            <position>34</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>624d64e11b209010400ca9bd2a4bcb3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_pharm_class_epc</element>
+            <position>35</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e64d64e11b209010400ca9bd2a4bcb3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>36</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>6e4d64e11b209010400ca9bd2a4bcb3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_openfda_upc</element>
+            <position>37</position>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:46</sys_created_on>
+            <sys_id>e24d64e11b209010400ca9bd2a4bcb3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_import_drug_names_01" sys_domain="global" view="Default view">164d64e11b209010400ca9bd2a4bcb0e</sys_ui_section>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_resus_runner_import_drug_names_01</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jacebenson</sys_created_by>
+            <sys_created_on>2020-05-02 22:49:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>164d64e11b209010400ca9bd2a4bcb0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_resus_runner_import_drug_names_01</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_section_164d64e11b209010400ca9bd2a4bcb0e</sys_update_name>
+            <sys_updated_by>jacebenson</sys_updated_by>
+            <sys_updated_on>2020-05-02 22:49:45</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

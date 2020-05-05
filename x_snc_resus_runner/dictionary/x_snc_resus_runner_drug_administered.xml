@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_snc_resus_runner_event" label="Drug Administered" max_length="40" name="x_snc_resus_runner_drug_administered" sizeclass="16" type="collection">
+        <element label="Administered By" max_length="32" name="administered_by" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Checked By" max_length="32" name="checked_by" reference="x_snc_resus_runner_staff" type="reference"/>
+        <element label="Dose" max_length="40" name="dose" type="string"/>
+        <element choice="1" label="Drug Given" max_length="32" name="drug_given" type="string">
+            <choice/>
+        </element>
+        <element label="Ordered By" max_length="32" name="ordered_by" reference="x_snc_resus_runner_staff" type="reference"/>
+        <index name="index">
+            <element name="drug_given"/>
+        </index>
+        <index name="index2">
+            <element name="checked_by"/>
+        </index>
+        <index name="index3">
+            <element name="ordered_by"/>
+        </index>
+        <index name="index4">
+            <element name="administered_by"/>
+        </index>
+    </element>
+</database>

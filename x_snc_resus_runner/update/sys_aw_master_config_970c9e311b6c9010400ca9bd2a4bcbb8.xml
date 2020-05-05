@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_master_config">
+    <sys_aw_master_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <brand_color/>
+        <compiled_page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</compiled_page>
+        <compiled_page_registry display_value="Resus Runner">9f0c9e311b6c9010400ca9bd2a4bcbb8</compiled_page_registry>
+        <description>View current details of your Emergency Department</description>
+        <global_search display_value="Default search settings">97a574ea53c0130084acddeeff7b12a6</global_search>
+        <global_search_data display_value="Resus Runner Search Context Config">1b0c9e311b6c9010400ca9bd2a4bcbb6</global_search_data>
+        <name>Resus Runner</name>
+        <navigation_type>breadcrumb</navigation_type>
+        <notifications_enabled>true</notifications_enabled>
+        <primary_color/>
+        <search_enabled>true</search_enabled>
+        <sys_class_name>sys_aw_master_config</sys_class_name>
+        <sys_created_by>andrew</sys_created_by>
+        <sys_created_on>2020-05-04 01:32:10</sys_created_on>
+        <sys_id>970c9e311b6c9010400ca9bd2a4bcbb8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Resus Runner</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_aw_master_config_970c9e311b6c9010400ca9bd2a4bcbb8</sys_update_name>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-04 01:55:49</sys_updated_on>
+        <user_preference_controls_enabled>true</user_preference_controls_enabled>
+        <workspace_logo>7d7162751b6c9010400ca9bd2a4bcb54</workspace_logo>
+        <workspace_url>resus_runner</workspace_url>
+    </sys_aw_master_config>
+</record_update>

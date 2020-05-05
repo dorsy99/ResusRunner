@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="Random to patient">9cb3a9f51ba89010400ca9bd2a4bcb80</map>
+        <reference_value_field/>
+        <source_field>u_weight</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_snc_resus_runner_random_user_import</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 21:27:57</sys_created_on>
+        <sys_id>f924edf51ba89010400ca9bd2a4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_weight</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_transform_entry_f924edf51ba89010400ca9bd2a4bcb35</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 21:27:57</sys_updated_on>
+        <target_field>weight</target_field>
+        <target_table>x_snc_resus_runner_patient</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>

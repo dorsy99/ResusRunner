@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>randomuser.me [ Default GET ]</qualified_name>
+        <rest_endpoint>https://randomuser.me/api/</rest_endpoint>
+        <rest_message display_value="randomuser.me">ae7799311ba89010400ca9bd2a4bcbc8</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 20:32:46</sys_created_on>
+        <sys_id>198799311ba89010400ca9bd2a4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_rest_message_fn_198799311ba89010400ca9bd2a4bcb1f</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-03 20:32:46</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

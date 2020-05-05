@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="resuscitation">457957cddb6850107db9d90d68961984</application>
+        <filter/>
+        <name>Patients</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_snc_resus_runner.resuscitation_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-01 22:17:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>794c1741dba850107db9d90d6896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patients</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_ui_module_794c1741dba850107db9d90d6896196b</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:17:21</sys_updated_on>
+        <table>x_snc_resus_runner_patient</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sys_ui_module_794c1741dba850107db9d90d6896196b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="resuscitation">457957cddb6850107db9d90d68961984</application><filter/><name>Patients</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_snc_resus_runner.resuscitation_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>jacebenson</sys_created_by><sys_created_on>2020-05-01 22:17:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>794c1741dba850107db9d90d6896196b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Patients</sys_name><sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package><sys_policy/><sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope><sys_update_name>sys_ui_module_794c1741dba850107db9d90d6896196b</sys_update_name><sys_updated_by>jacebenson</sys_updated_by><sys_updated_on>2020-05-01 22:17:21</sys_updated_on><table>x_snc_resus_runner_patient</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-1292562115</payload_hash>
+        <record_name>Patients</record_name>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-01 22:17:21</sys_created_on>
+        <sys_id>314c1741dba850107db9d90d6896196d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>171d250c7d50000001</sys_recorded_at>
+        <sys_updated_by>andrew</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:52:23</sys_updated_on>
+        <type>Module</type>
+        <update_guid>794c1741f3a85010739fe5e5e7e4b06c</update_guid>
+        <update_guid_history>794c1741f3a85010739fe5e5e7e4b06c:-1292562115</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-02 13:53:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>228af860e71548f18ac6ec2b3f805391</sys_id>
+        <sys_metadata>794c1741dba850107db9d90d6896196b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patients</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sys_ui_module_794c1741dba850107db9d90d6896196b</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_794c1741dba850107db9d90d6896196b">314c1741dba850107db9d90d6896196d</sys_update_version>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-02 13:53:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

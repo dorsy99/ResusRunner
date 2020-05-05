@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($rootScope,$scope) {
+	/* widget controller */
+	var c = this;
+	c.data.note = "";
+	
+	c.addNote = function(){
+		if (c.data.note == "")
+			return; // Don't add empty note
+		
+		var outputObj = {
+			"table": c.data.table,
+			"notes": c.data.note
+		}
+		$rootScope.$broadcast('writeEvent', outputObj);
+		
+		// Reset
+		c.data.note = "";
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.no-resize {
+  resize: none;
+}
+
+.panel-heading {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+span.btn-success {
+  color: white;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>rrp_notes</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Notes</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.table = CONST.NOTES;
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-01 23:07:01</sys_created_on>
+        <sys_id>11a7ef49dba850107db9d90d6896192b</sys_id>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name>Notes</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_11a7ef49dba850107db9d90d6896192b</sys_update_name>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:07:33</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Add note</h2>
+  </div>
+  <div class="panel-body">
+    <div class="input-group">
+      <textarea 
+                class="form-control no-resize"
+                id="notes" rows="3"
+                ng-model="data.note"
+                >
+      </textarea>
+      
+      
+      <span 
+              class="btn btn-success input-group-addon" 
+              type="button"
+              ng-click="c.addNote();"
+              >
+        ${Add note}
+      </span>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+]]></template>
+    </sp_widget>
+</record_update>

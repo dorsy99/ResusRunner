@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($sanitize) {
+  /* widget controller */
+  var c = this;
+	c.data.content = "loading...";
+	c.data.classes = "alert alert-info";
+	c.data.role = "alert";
+	c.content = "really loading";
+	$rootScope.$on('writeAlert', function(event,data) {
+		c.data.type = data.type;
+		c.data.classes = data.classes;
+		c.data.content = data.content;
+		console.log('Listener caught writeEvent: ', data);
+  });
+	 
+}
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>legend {
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
+.standard{
+	height: 159px;
+}
+
+.full{
+	height: 80%;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>rrp_alert</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Alert</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	if(input){
+		$sp.log("start input " + input.eventData.table);
+		
+		var gr = new GlideRecord(input.eventData.table);
+		gr.initialize();
+		gr.setValue("resuscitation", input.sys_id);
+		if(input.eventData.table == CONST.NOTES){
+			gr.setValue("notes", input.eventData.notes);
+		}
+		if(input.eventData.table == CONST.RHYTHM){
+			gr.setValue("rhythm", input.eventData.rhythm);
+		}
+		if(input.eventData.table == CONST.SHOCK){
+			gr.setValue("action", input.eventData.action);
+		}
+		/*if(input.eventData.table == CONST.DRUG){
+			gr.setValue("rhythm", input.eventData.notes);
+		}*/
+		gr.setValue("cycle_time", "1970-01-01 00:" + input.currCycle);
+		gr.setValue("total_time", "1970-01-01 00:" + input.totalTime);
+		gr.setValue("cycle_number", input.cycleCount);
+		gr.setValue("time", new GlideDateTime());
+		gr.insert();
+		
+	}
+	else {
+		data.sys_id = $sp.getParameter("sys_id");
+		data.shock = 0;
+		data.adren = 0;
+		data.totalTime = "00:00";
+		data.currCycle = "00:00";
+		data.cycleCount = 0;
+		data.shockClass = CONST.SHOCK;
+		data.adrenClass = CONST.DRUG;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-02 15:41:56</sys_created_on>
+        <sys_id>675b0bd5dba090107db9d90d689619d6</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>Alert</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_675b0bd5dba090107db9d90d689619d6</sys_update_name>
+        <sys_updated_by>chris</sys_updated_by>
+        <sys_updated_on>2020-05-03 23:43:02</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Alerts</h2>
+  </div>
+
+  <div class="panel-body standard">
+    <div class="{{c.data.classes}} full" role="{{c.data.role}}">
+      <span ng-bind-html="c.data.content"></span>
+    </div>
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

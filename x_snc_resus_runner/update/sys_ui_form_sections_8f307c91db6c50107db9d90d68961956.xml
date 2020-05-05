@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="8f307c91db6c50107db9d90d68961956" sys_domain="global" table="x_snc_resus_runner_shock" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-02 04:24:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43307c91db6c50107db9d90d68961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_resus_runner_shock" name="x_snc_resus_runner_shock" sys_domain="global" view="Default view">8f307c91db6c50107db9d90d68961956</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_resus_runner_shock" sys_domain="global" view="Default view">4e9d77c5dbe850107db9d90d68961906</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-02 04:24:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-02 04:24:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87307c91db6c50107db9d90d689619d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_resus_runner_shock" name="x_snc_resus_runner_shock" sys_domain="global" view="Default view">8f307c91db6c50107db9d90d68961956</sys_ui_form>
+            <sys_ui_section caption="Time" display_value="Time" name="x_snc_resus_runner_shock" sys_domain="global" view="Default view">8b307c91db6c50107db9d90d68961955</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-02 04:24:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_resus_runner_shock</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-02 04:24:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f307c91db6c50107db9d90d68961956</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_resus_runner_shock</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_8f307c91db6c50107db9d90d68961956</sys_update_name>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-02 04:24:10</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

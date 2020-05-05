@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_snc_resus_runner_shock</description>
+        <name>x_snc_resus_runner_shock</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-01 22:23:59</sys_created_on>
+        <sys_id>c7cdd781dba850107db9d90d68961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_resus_runner_shock</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sys_security_acl_c7cdd781dba850107db9d90d68961980</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:23:59</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

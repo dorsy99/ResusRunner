@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>play-circle</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">80206bc91b645010400ca9bd2a4bcb16</sp_column>
+        <sp_page display_value="rrp_launch">8813e34d1b645010400ca9bd2a4bcbaa</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-01 22:35:09</sys_created_on>
+        <sys_id>3e506bc91b645010400ca9bd2a4bcb92</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Start a Resus' event</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_instance_link_3e506bc91b645010400ca9bd2a4bcb92</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-02 13:56:04</sys_updated_on>
+        <title>Start a Resus' event</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Top Icon",
+		"displayValue": "Top Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=3e506bc91b645010400ca9bd2a4bcb92"/>
+</record_update>

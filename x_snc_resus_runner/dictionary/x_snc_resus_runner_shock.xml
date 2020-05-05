@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_snc_resus_runner_event" label="Shock" max_length="40" name="x_snc_resus_runner_shock" sizeclass="183" type="collection">
+        <element choice="1" label="Action" max_length="40" name="action" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Shock" sequence="0" value="shock"/>
+                <element inactive_on_update="false" label="Dump" sequence="1" value="dump"/>
+            </choice>
+        </element>
+    </element>
+</database>

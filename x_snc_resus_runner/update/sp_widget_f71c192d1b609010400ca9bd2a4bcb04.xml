@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(spModal, $location) {
+	/* widget controller */
+	var c = this;
+
+	c.exitResus = function(val){
+		spModal.confirm("Confirm this patient has entered ROSC/Return of Spontaneous Circulation").then(function(){
+			if(val === 'dead'){
+				val = "Deceased"
+			} else {
+				val = "ROSC"
+			}
+			var outputObj = {
+				"table": c.data.table,
+				"type": val
+			}
+			
+			$rootScope.$broadcast('writeEvent', outputObj);
+			setTimeout(function(){
+				$location.search({
+					id: 'rrp_wrapup',
+					sys_id: c.data.sys_id,
+					table: c.data.main_table
+				});
+			}, 500)
+		})
+
+	}
+	var jargonObj = {};
+
+	jargonObj.rosc = {};
+	jargonObj.rosc.technical = "ROSC";
+	jargonObj.rosc.layperson = "Return of Spontenaouns Circulation";
+	jargonObj.rosc.current = jargonObj.rosc.technical;
+
+	jargonObj.dead = {};
+	jargonObj.dead.technical = "Deceased";
+	jargonObj.dead.layperson = "Deceased";
+	jargonObj.dead.current = jargonObj.dead.technical;
+
+	// ... replace or add new objects for labels to replace following the example above
+
+	c.data.jargon = jargonObj; 
+	var jargonArray = c.data.jargon; 
+
+	// Receive the emitted Data object 
+	$rootScope.$on('setJargonState', function(event, data) {	
+		c.data.altText = "changed the alt text";
+		setCurrentLabel(data);
+	});	
+
+	// Label-setting Function - will switch between the *.technical (false) and *.layperson (true) values based on the emitted data object
+
+	function setCurrentLabel(trueFalse) {
+		var jargonName;
+		var jargonType;
+
+		for (jargonName in jargonArray) {
+			jargonType = jargonArray[jargonName];
+			(trueFalse == true) ? jargonType.current = jargonType.layperson : jargonType.current = jargonType.technical;		
+		}
+	}	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn {
+  /*height:100px;
+  margin:0px 0px 5px 0px;*/
+}
+
+.btn-shock-wrapper {
+  padding: 5px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>rrp_resus_exit_rosc</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Resus Exit ROSC</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.table = CONST.MILESTONE;
+	data.main_table = CONST.RESUS;
+	data.sys_id = $sp.getParameter("sys_id");
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 02:14:23</sys_created_on>
+        <sys_id>f71c192d1b609010400ca9bd2a4bcb04</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Resus Exit ROSC</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_f71c192d1b609010400ca9bd2a4bcb04</sys_update_name>
+        <sys_updated_by>david</sys_updated_by>
+        <sys_updated_on>2020-05-04 02:39:55</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">{{c.data.jargon.rosc.current}}</h2>
+  </div>
+  <div class="panel-body">
+    <div class="content details">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-xs-12 btn-shock-wrapper">
+            <button id="exit-rosc" 
+                    name="exit-rosc" 
+                    class="btn btn-success btn-block"
+                    ng-click="c.exitResus('rosc')"
+                    >
+              {{c.data.jargon.rosc.current}}
+            </button>
+          </div>
+
+               
+        </div>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

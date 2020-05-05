@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">91a86b89dba850107db9d90d6896192a</sp_column>
+        <sp_widget display_value="Jargon Switcher">abad31dddbec50107db9d90d689619b4</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-02 10:10:17</sys_created_on>
+        <sys_id>c17fb111db2090107db9d90d689619b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_instance_c17fb111db2090107db9d90d689619b5</sys_update_name>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-02 15:46:21</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=c17fb111db2090107db9d90d689619b5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</application>
+        <file_path/>
+        <instance_id>19d1b1004f00d600facf220f0310c7f1</instance_id>
+        <instance_name>hackathon085</instance_name>
+        <name>sp_instance_c17fb111db2090107db9d90d689619b5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">91a86b89dba850107db9d90d6896192a</sp_column><sp_widget display_value="Jargon Switcher">abad31dddbec50107db9d90d689619b4</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>kevin</sys_created_by><sys_created_on>2020-05-02 10:10:17</sys_created_on><sys_id>c17fb111db2090107db9d90d689619b5</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package><sys_policy/><sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope><sys_update_name>sp_instance_c17fb111db2090107db9d90d689619b5</sys_update_name><sys_updated_by>jacebenson</sys_updated_by><sys_updated_on>2020-05-02 15:46:21</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=c17fb111db2090107db9d90d689619b5"/></record_update>]]></payload>
+        <payload_hash>1631392172</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d013eb85dba850107db9d90d68961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-02 15:46:21</sys_created_on>
+        <sys_id>006c8359dba090107db9d90d689619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171d6112b200000001</sys_recorded_at>
+        <sys_updated_by>jacebenson</sys_updated_by>
+        <sys_updated_on>2020-05-02 15:46:21</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>486c83598aa090109a6c50fbd9374eac</update_guid>
+        <update_guid_history>486c83598aa090109a6c50fbd9374eac:1631392172,65fb8f19dba09010ddac3bfd2057ed58:504015627,557ff11105209010287e99bd30ea41d5:1631392172</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2140d9651b609010400ca9bd2a4bcb5d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kevin</sys_created_by>
+        <sys_created_on>2020-05-03 01:22:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>0abfc1f57a92418a811bc07fe6c25749</sys_id>
+        <sys_metadata>c17fb111db2090107db9d90d689619b5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_scope_delete display_value="">04591ce9e0114dc299d3cf1e81358251</sys_scope_delete>
+        <sys_update_name>sp_instance_c17fb111db2090107db9d90d689619b5</sys_update_name>
+        <sys_update_version display_value="sp_instance_c17fb111db2090107db9d90d689619b5">006c8359dba090107db9d90d689619ad</sys_update_version>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 01:22:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

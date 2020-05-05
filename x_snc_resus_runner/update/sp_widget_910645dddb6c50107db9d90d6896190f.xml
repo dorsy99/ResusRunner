@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	
+	c.updateRhythm = function(val){
+		var outputObj = {
+			"table": c.data.table,
+			"rhythm": val
+		}
+		$rootScope.$broadcast('writeEvent', outputObj);
+		// Commented out by Chris
+		/*$rootScope.$broadcast('writeAlert', {
+			"content": "Test Content<br/><strong>"+val+"</strong>",
+			"classes": "alert alert-success"
+		});*/
+		
+	}
+	var jargonObj = {};
+
+	jargonObj.vt = {};
+	jargonObj.vt.technical = "VT";
+	jargonObj.vt.layperson = "Pulseless ventricular tachycardia (VT)";
+	jargonObj.vt.current = jargonObj.vt.technical;
+
+	jargonObj.vf ={}
+	jargonObj.vf.technical = "VF";
+	jargonObj.vf.layperson = "Ventricular fibrillation (VF)";
+  jargonObj.vf.current = jargonObj.vf.technical;
+	
+	jargonObj.pea ={}
+	jargonObj.pea.technical = "PEA";
+	jargonObj.pea.layperson = "Pulseless electrical activity (PEA)";
+	jargonObj.pea.current = jargonObj.pea.technical;
+	
+	jargonObj.asys ={}
+	jargonObj.asys.technical = "Asys";
+	jargonObj.asys.layperson = "Cardiac flatline (Asystole)";
+	jargonObj.asys.current = jargonObj.asys.technical;
+
+	// ... replace or add new objects for labels to replace following the example above
+	
+	c.data.jargon = jargonObj; 
+	var jargonArray = c.data.jargon; 
+	
+	// Receive the emitted Data object 
+	$rootScope.$on('setJargonState', function(event, data) {	
+		c.data.altText = "changed the alt text";
+		setCurrentLabel(data);
+	});	
+	
+	// Label-setting Function - will switch between the *.technical (false) and *.layperson (true) values based on the emitted data object
+
+	function setCurrentLabel(trueFalse) {
+		var jargonName;
+		var jargonType;
+		
+		for (jargonName in jargonArray) {
+			jargonType = jargonArray[jargonName];
+			(trueFalse == true) ? jargonType.current = jargonType.layperson : jargonType.current = jargonType.technical;		
+		}
+	}	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn {
+  /*height:100px;
+  margin:0px 0px 5px 0px;*/
+  white-space: normal;
+  font-size: 1vw;
+}
+
+.btn-shock-wrapper {
+  padding: 5px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>rrp_rhythm</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Heart rhythm</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+data.table = CONST.RHYTHM;
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-02 05:59:20</sys_created_on>
+        <sys_id>910645dddb6c50107db9d90d6896190f</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_name>Heart rhythm</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_widget_910645dddb6c50107db9d90d6896190f</sys_update_name>
+        <sys_updated_by>kevin</sys_updated_by>
+        <sys_updated_on>2020-05-03 12:49:31</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Cardiac rhythm</h2>
+  </div>
+  
+  <div class="panel-body">
+    <div class="content details">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-xs-6 btn-shock-wrapper">
+            <button id="rhythm-vf" 
+                    name="rhythm-vf" 
+                    class="btn btn-zest btn-success btn-block"
+                    ng-click="c.updateRhythm('VF')"
+                    >
+              {{c.data.jargon.vf.current}}
+            </button>
+          </div>
+
+          <div class="col-xs-6 btn-shock-wrapper">
+            <button id="rhythm-pea" 
+                    name="rhythm-pea" 
+                    class="btn btn-zest btn-danger btn-block"
+                    ng-click="c.updateRhythm('PEA')"
+                    >
+              {{c.data.jargon.pea.current}}
+            </button>  
+          </div>
+
+          <div class="col-xs-6 btn-shock-wrapper">
+            <button id="rhythm-vt" 
+                    name="rhythm-vt" 
+                    class="btn btn-zest btn-success btn-block"
+                    ng-click="c.updateRhythm('VT')">
+              {{c.data.jargon.vt.current}}
+            </button>
+          </div>
+
+          <div class="col-xs-6 btn-shock-wrapper">
+            <button id="rhythm-asys" 
+                    name="rhythm-asys" 
+                    class="btn btn-zest btn-danger btn-block"
+                    ng-click="c.updateRhythm('ASYS')"
+                    >
+              {{c.data.jargon.asys.current}}
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

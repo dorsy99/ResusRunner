@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Attendees" section_id="3d1ed6b11b6c9010400ca9bd2a4bcbea" sys_domain="global" table="x_snc_resus_runner_resuscitation_instance" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>medical_tl</element>
+            <position>0</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>7fae9eb11b6c9010400ca9bd2a4bcbdf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>airway_doctor</element>
+            <position>1</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>f3ae9eb11b6c9010400ca9bd2a4bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assisting_doctors</element>
+            <position>2</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>7bae9eb11b6c9010400ca9bd2a4bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>ffae9eb11b6c9010400ca9bd2a4bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nurse_tl</element>
+            <position>4</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>77ae9eb11b6c9010400ca9bd2a4bcbe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>procedures_nurse</element>
+            <position>5</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>fbae9eb11b6c9010400ca9bd2a4bcbe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>airway_nurse</element>
+            <position>6</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>73ae9eb11b6c9010400ca9bd2a4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>drug_nurse</element>
+            <position>7</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>f7ae9eb11b6c9010400ca9bd2a4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scribe</element>
+            <position>8</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>7fae9eb11b6c9010400ca9bd2a4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assisting_nurses</element>
+            <position>9</position>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:43:40</sys_created_on>
+            <sys_id>f3ae9eb11b6c9010400ca9bd2a4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendees" display_value="Attendees" name="x_snc_resus_runner_resuscitation_instance" sys_domain="global" view="025be3d81bd30010400ca9bd2a4bcb7d">3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_ui_section>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:43:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Attendees</caption>
+            <header>false</header>
+            <name>x_snc_resus_runner_resuscitation_instance</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>andrew</sys_created_by>
+            <sys_created_on>2020-05-04 01:41:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Attendees</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+            <sys_update_name>sys_ui_section_3d1ed6b11b6c9010400ca9bd2a4bcbea</sys_update_name>
+            <sys_updated_by>andrew</sys_updated_by>
+            <sys_updated_on>2020-05-04 01:41:06</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">025be3d81bd30010400ca9bd2a4bcb7d</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

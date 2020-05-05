@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>number</display_field>
+        <field_list/>
+        <filter table="x_snc_resus_runner_resuscitation_instance">active=true<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>10</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">98d0993d1b689010400ca9bd2a4bcbac</sp_column>
+        <sp_page display_value="resus_event">58266f09dba850107db9d90d689619e7</sp_page>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>jacebenson</sys_created_by>
+        <sys_created_on>2020-05-03 20:03:36</sys_created_on>
+        <sys_id>4ad0d93d1b689010400ca9bd2a4bcbb3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_instance_vlist_4ad0d93d1b689010400ca9bd2a4bcbb3</sys_update_name>
+        <sys_updated_by>david</sys_updated_by>
+        <sys_updated_on>2020-05-03 22:31:21</sys_updated_on>
+        <table>x_snc_resus_runner_resuscitation_instance</table>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "patient,start_time",
+		"displayValue": "patient,start_time"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "58266f09dba850107db9d90d689619e7",
+		"displayValue": "resus_event"
+	},
+	"hide_footer": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ad0d93d1b689010400ca9bd2a4bcbb3"/>
+</record_update>

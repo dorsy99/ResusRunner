@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary:#428bca;
+$body-bg:#ffffff;
+$state-success-text:#5cb85c;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#278efc;
+$text-color:#717171;
+$sp-logo-margin-y:.5rem;
+$navbar-inverse-link-hover-color:#007bff;
+$panel-bg:#fff;
+$brand-success:#5cb85c;
+$navbar-inverse-bg:#c0dcfa;
+$brand-warning:#f0ad4e;
+$brand-danger:#d9534f;
+$sp-tagline-color:#717171;
+$navbar-inverse-link-color:#000000;
+$brand-info:#5bc0de;
+$link-color:#428bca;
+$sp-logo-margin-x:15px;
+$btn-default-bg:#fff;
+$text-muted:#979797;
+</css_variables>
+        <default>false</default>
+        <homepage display_value="rrp_homepage">573fd3c91b645010400ca9bd2a4bcb82</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page display_value="login">6995a144cb11120000f8d856634c9c25</login_page>
+        <logo>763ed7891b645010400ca9bd2a4bcb29</logo>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-01 22:24:16</sys_created_on>
+        <sys_id>92cd57891b645010400ca9bd2a4bcb9f</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Resus Runner Portal</sys_name>
+        <sys_package display_value="Resus Runner" source="x_snc_resus_runner">42f21b89db6850107db9d90d6896195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resus Runner">42f21b89db6850107db9d90d6896195a</sys_scope>
+        <sys_update_name>sp_portal_92cd57891b645010400ca9bd2a4bcb9f</sys_update_name>
+        <sys_updated_by>david</sys_updated_by>
+        <sys_updated_on>2020-05-04 02:04:25</sys_updated_on>
+        <theme display_value="RRP Theme">7893cdad1b209010400ca9bd2a4bcb07</theme>
+        <title>Resus Runner Portal</title>
+        <ts_index_group/>
+        <url_suffix>rrp</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=92cd57891b645010400ca9bd2a4bcb9f"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>logo</file_name>
+        <hash>cca2991bafe0fc9b17f85df234ed141fb08f0cf7ea4f523cc04aba59f67a3dc4</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>6393</size_bytes>
+        <size_compressed>2471</size_compressed>
+        <state>available</state>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-01 22:25:53</sys_created_on>
+        <sys_id>763ed7891b645010400ca9bd2a4bcb29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-05-01 22:25:53</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>92cd57891b645010400ca9bd2a4bcb9f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="763ed7891b645010400ca9bd2a4bcb29">763ed7891b645010400ca9bd2a4bcb29</sys_attachment>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-01 22:25:53</sys_created_on>
+        <sys_id>b63ed7891b645010400ca9bd2a4bcb29</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3284</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="763ed7891b645010400ca9bd2a4bcb29">763ed7891b645010400ca9bd2a4bcb29</sys_attachment>
+        <sys_created_by>david</sys_created_by>
+        <sys_created_on>2020-05-01 22:25:53</sys_created_on>
+        <sys_id>3a3ed7891b645010400ca9bd2a4bcb29</sys_id>
+    </sys_attachment_doc>
+</record_update>
